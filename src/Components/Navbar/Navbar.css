@@ -1,0 +1,56 @@
+.active{
+    color: #07ff1c;
+    font-weight: 700;
+    border-bottom: 4px solid #07ff1c;
+}
+
+nav{
+    width: 100%;
+    color: #ffffff;
+    font-weight: 600;
+    padding: 4px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.logo{
+    width: 120px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 5px 20px;
+    font-size: 25px;
+}
+
+.navBtn{
+    background: #07ff1c;
+    color: #121316;
+    padding: 14px 25px;
+    font-size: 25px;
+    font-weight: 600;
+    border-radius: 30px;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.darkNav{
+    background: #777777;
+    transition: 0.5s;
+}
+
+nav ul li a:not(.active):hover{
+    color: rgb(0, 201, 27);
+}

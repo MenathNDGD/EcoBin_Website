@@ -1,0 +1,53 @@
+.hero{
+    width: 100%;
+    min-height: 310vh;
+    background: linear-gradient(rgba(22, 22, 22, 0.5), rgba(22, 22, 22, 0.5)), url('../../assets/home_bg.png');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.hero .aboutText h1{
+    text-align: center;
+    padding-top: 9%;
+    justify-content: center;
+    font-size: 80px;
+}
+
+.hero .aboutText p{
+    font-size: 30px;
+    line-height: 2;
+}
+
+.aboutMid{
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 5%;
+    display: flex;
+}
+
+.aboutMid .VisionImg{
+    justify-content: center;
+}
+
+.aboutMid .VisionImg img{
+    width: 185%;
+}
+
+.VisionBody{
+    display: flex;
+    margin-left: 30%;
+}
+
+.VisionBody i{
+    width: 25px;
+    color: #21242b;
+}
+
+.VisionBody h1{
+    font-size: 25px;
+}
+
+.aboutMid p{
+    padding-top: 10%;
+}

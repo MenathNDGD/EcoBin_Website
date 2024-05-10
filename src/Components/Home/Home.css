@@ -1,0 +1,228 @@
+/*.container{
+    padding-left: 10%;
+    padding-right: 10%;
+}*/
+
+.hero{
+    width: 100%;
+    min-height: 310vh;
+    background: linear-gradient(rgba(22, 22, 22, 0.5), rgba(22, 22, 22, 0.5)), url('../../assets/home_bg.png');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.hero-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 150px 0 20px 0;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.text-head h1{
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.text-head{
+    padding-right: 50px;
+}
+
+.text-head2 h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.text-head2 h1 span{
+    color: rgb(24, 228, 41);
+}
+
+.text-head2{
+    padding: auto;
+}
+
+.hero p{
+    font-size: 25px;
+    text-align: justify;
+    margin: 10px auto 20px;
+    line-height: 1.8;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.hero-mid{
+    text-align: center;
+    font-size: 30px;
+    padding-top: 3%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.hero-mid h1{
+    text-transform: uppercase;
+}
+
+.hero-mid span{
+    color: rgb(24, 228, 41);
+}
+
+.hero-mid img{
+    width: 150vh;
+    padding-top: 2%;
+    margin-top: 2%;
+    background: linear-gradient(rgba(22, 22, 22, 0.5), rgba(22, 22, 22, 0.5));
+}
+
+.achive{
+    text-align: center;
+    font-size: 30px;
+    padding-top: 4%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.achive h1{
+    text-transform: uppercase;
+}
+
+.achive span{
+    color: rgb(24, 228, 41);
+}
+
+.achive p{
+    text-align: center;
+    font-size: 25px;
+    margin: 10px auto 20px;
+}
+
+.achive .wrapper{
+    position: absolute;
+    width: 80vw;
+    transform: translate(-50%, -50%);
+    top: 195%;
+    left: 50%;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.achive .contain{
+    width: 28vmin;
+    height: 28vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1em 0;
+    position: relative;
+    font-size: 16px;
+    border-radius: 0.5em;
+    background-color: #21242b;
+    border-bottom: 10px solid #00c51ada;
+}
+
+i{
+    color: #18f98f;
+    font-size: 4.5em;
+    text-align: center;
+}
+
+.achive .wrapper .contain span.num{
+    color: #ffffff;
+    display: grid;
+    place-items: center;
+    font-weight: 600;
+    font-size: 3.5em;
+}
+
+.achive .wrapper .contain span.text{
+    color: #e0e0e0;
+    font-size: 1.9em;
+    text-align: center;
+    pad: 0.7em 0;
+    font-weight: 400;
+    line-height: 0;
+}
+
+.volunteer{
+    text-align: center;
+    font-size: 30px;
+    padding-top: 18%;
+    display: flex;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.volunteer .volText{
+    padding-top: 2%;
+    padding-left: 2%;
+}
+
+.volunteer .volText h1{
+    text-transform: uppercase;
+}
+
+.volunteer .volText span{
+    color: rgb(24, 228, 41);
+}
+
+.volunteer .volText p{
+    font-size: 25px;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.volunteer .volImg{
+    width: 100%;
+    padding-top: 3%;
+    padding-right: 6%;
+}
+
+.download{
+    display: flex;
+    align-items: center;
+    margin-top: 3%;
+    margin-left: 20%;
+    margin-right: 20%;
+    justify-content: center;
+    background: linear-gradient(rgba(255, 255, 255, 0.247), rgba(255, 255, 255, 0.247));
+    height: 22em;
+    border-radius: 4em;
+    color: #121316;
+}
+
+.download .scanImg img{
+    width: 24em;
+    padding-right: 80px;
+}
+
+.download .scanText{
+    margin-left: -2%;
+}
+
+.download .scanText h1{
+    text-transform: uppercase;
+    font-weight: 500;
+    text-align: left;
+    margin-left: -4%;
+}
+
+.download .scanText ol{
+    list-style: disc;
+    margin-top: 3%;
+    font-weight: 400;
+}
+
+.download .scanText ol li{
+    font-size: 25px;
+    line-height: 1.5;
+}
+
+.download .scanText button{
+    margin-top: 4%;
+    margin-left: 28%;
+    font-size: 20px;
+    font-weight: 500;
+}

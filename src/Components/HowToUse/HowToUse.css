@@ -1,0 +1,65 @@
+.hero{
+    width: 100%;
+    min-height: 310vh;
+    background: linear-gradient(rgba(22, 22, 22, 0.5), rgba(22, 22, 22, 0.5)), url('../../assets/home_bg.png');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.chatBox {
+    clear: both;
+    position: relative;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+  
+.chatBox .arrow {
+    width: 20px;
+    height: 20px;
+    overflow: hidden;
+    position: relative;
+    float: left;
+    top: 16px;
+    right: -1px;
+}
+  
+.chatBox .arrow .outer {
+    width: 0;
+    height: 0;
+    border-right: 20px solid #000000;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+  
+.chatBox .arrow .inner {
+    width: 0;
+    height: 0;
+    border-right: 20px solid #ffffff;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    position: absolute;
+    top: 0;
+    left: 2px;
+}
+  
+.chatBox .message-body {
+    float: left;
+    width: 300px;
+    height: auto;
+    border: 1px solid #CCC;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    padding: 6px 8px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+}
+  
+.chatBox .message-body p {
+    margin: 0;
+}
