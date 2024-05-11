@@ -1,6 +1,6 @@
 .hero{
     width: 100%;
-    min-height: 310vh;
+    max-height: fit-content;
     background: linear-gradient(rgba(22, 22, 22, 0.5), rgba(22, 22, 22, 0.5)), url('../../assets/home_bg.png');
     background-size: cover;
     background-position: center;
@@ -15,24 +15,33 @@
 }
 
 .hero .aboutText p{
-    font-size: 30px;
-    line-height: 2;
+    font-size: 35px;
+    line-height: 2.5;
+    padding-top: 15px;
+}
+
+.aboutSec{
+    background: linear-gradient(rgba(163, 151, 151, 0.301), rgba(163, 151, 151, 0.301));
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 40px;
 }
 
 .aboutMid{
     margin-top: 7%;
-    padding-left: 10%;
     margin: 100px auto;
+    border-bottom: 5px solid #ffffff;
 }
 
 .aboutMid img{
     max-width: 500px;
     float: left;
     margin-right: 35px;
+    margin-top: 3%;
+    padding-left: 50px;
 }
 
 .VisionBody{
-    background: linear-gradient(rgba(163, 151, 151, 0.301), rgba(163, 151, 151, 0.301));
     padding-top: 18px;
     border-radius: 60px;
     margin-right: 13%;
@@ -58,5 +67,56 @@
 .aboutMid .VisionBody p{
     font-size: 30px;
     line-height: 2.3;
-    margin-right: -7%;
+    margin-right: -21%;
+    padding-bottom: 35px;
+}
+
+.aboutMid1{
+    margin: 100px auto;
+    display: flex;
+    margin-top: 8%;
+}
+
+.aboutMid1 img{
+    max-width: 450px;
+    float: right;
+    padding-right: 40px;
+    margin-top: -5%;
+    padding-bottom: 35px;
+}
+
+.VisionBody1{
+    padding-top: 18px;
+    border-radius: 60px;
+    margin-right: -24.4%;
+    margin-top: -5.9%;
+}
+
+.aboutMid1 .VisionBody1 i{
+    float: left;
+    color: #ffffff;
+    padding-top: 15px;
+    padding-left: 320px;
+    width: 450px;
+}
+
+.aboutMid1 .VisionBody1 h1{
+    font-size: 55px;
+    padding-top: 15px;
+}
+
+.aboutMid1 .VisionBody1 h1 span{
+    color: rgb(24, 228, 41);
+}
+
+.aboutMid1 .VisionBody1 p{
+    font-size: 30px;
+    line-height: 2.3;
+    margin-left: -7%;
+    margin-right: 18%;
+}
+
+.aboutPara p{
+    font-size: 35px;
+    line-height: 2.5;
 }
