@@ -14,14 +14,21 @@ const AboutUs = () => {
       </div>
 
       <div className="aboutMid">
-        <div className="VisionImg">
-          <img src={VisionImg} alt="" />
-        </div>
+        <img src={VisionImg} alt="" />
         <div className="VisionBody">
           <i class="fa-solid fa-eye-low-vision"></i>
-          <h1>Our Vision</h1>
+          <h1>Our <span>Vision</span></h1>
+          <p>“To lead the transformation of waste management practices globally by providing innovative IoT-based solutions that optimize efficiency, reduce environmental impact, and empower communities towards a sustainable future.”</p>
         </div>
-        <p>“To lead the transformation of waste management practices globally by providing innovative IoT-based solutions that optimize efficiency, reduce environmental impact, and empower communities towards a sustainable future.”</p>
+      </div>
+
+      <div className="aboutMid">
+        <img src={VisionImg} alt="" />
+        <div className="VisionBody">
+          <i class="fa-solid fa-eye-low-vision"></i>
+          <h1>Our <span>Vision</span></h1>
+          <p>“To lead the transformation of waste management practices globally by providing innovative IoT-based solutions that optimize efficiency, reduce environmental impact, and empower communities towards a sustainable future.”</p>
+        </div>
       </div>
     </div>
   )
