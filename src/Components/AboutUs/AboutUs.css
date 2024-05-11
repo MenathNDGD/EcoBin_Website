@@ -20,34 +20,43 @@
 }
 
 .aboutMid{
+    margin-top: 7%;
     padding-left: 10%;
-    padding-right: 10%;
-    margin-top: 5%;
-    display: flex;
+    margin: 100px auto;
 }
 
-.aboutMid .VisionImg{
-    justify-content: center;
-}
-
-.aboutMid .VisionImg img{
-    width: 185%;
+.aboutMid img{
+    max-width: 500px;
+    float: left;
+    margin-right: 35px;
 }
 
 .VisionBody{
-    display: flex;
-    margin-left: 30%;
+    background: linear-gradient(rgba(163, 151, 151, 0.301), rgba(163, 151, 151, 0.301));
+    padding-top: 18px;
+    border-radius: 60px;
+    margin-right: 13%;
 }
 
-.VisionBody i{
-    width: 25px;
-    color: #21242b;
+.aboutMid .VisionBody i{
+    float: left;
+    color: #ffffff;
+    width: 155px;
+    margin-left: 15%;
+    padding-top: 15px;
 }
 
-.VisionBody h1{
-    font-size: 25px;
+.aboutMid .VisionBody h1{
+    font-size: 55px;
+    padding-top: 15px;
 }
 
-.aboutMid p{
-    padding-top: 10%;
+.aboutMid .VisionBody h1 span{
+    color: rgb(24, 228, 41);
+}
+
+.aboutMid .VisionBody p{
+    font-size: 30px;
+    line-height: 2.3;
+    margin-right: -7%;
 }
