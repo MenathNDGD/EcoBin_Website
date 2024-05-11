@@ -8,8 +8,6 @@ import Navbar from '../Navbar/Navbar'
 import Footer from '../Footer/Footer'
 
 const Home = () => {
-
-  <script src="../src/Components/Home/Script.js"></script>
   
   return (
     <div className='hero'>
