@@ -1,7 +1,6 @@
 .active{
     color: #07ff1c;
     font-weight: 700;
-    border-bottom: 4px solid #07ff1c;
 }
 
 nav{
@@ -27,7 +26,7 @@ nav{
 nav ul li{
     display: inline-block;
     list-style: none;
-    margin: 5px 20px;
+    margin: 5px 25px;
     font-size: 25px;
 }
 
@@ -53,4 +52,8 @@ nav ul li{
 
 nav ul li a:not(.active):hover{
     color: rgb(0, 201, 27);
+}
+
+.navBtn:hover{
+    transform: scale(1.1);
 }
