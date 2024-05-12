@@ -1,0 +1,20 @@
+.hero{
+    width: 100%;
+    min-height: 310vh;
+    background: linear-gradient(rgba(22, 22, 22, 0.5), rgba(22, 22, 22, 0.5)), url('../../assets/home_bg.png');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.loginContent{
+    display: flex;
+    padding-top: 10%;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginContent .loginImg img{
+    width: 75%;
+}
+  
