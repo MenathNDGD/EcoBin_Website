@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import './Navbar.css'
 import logo from '../../assets/logo.png'
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
 
@@ -19,7 +19,7 @@ const Navbar = () => {
         <li><NavLink to="/">Home</NavLink></li>
         <li><NavLink to="/how-to-use">How to Use</NavLink></li>
         <li><NavLink to="/about-us">About Us</NavLink></li>
-        <li><NavLink to="/login"><button className='navBtn'>Login</button></NavLink></li>
+        <li><NavLink to="/login-reg"><button className='navBtn'>Login</button></NavLink></li>
       </ul>
     </nav>
   )
