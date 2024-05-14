@@ -7,59 +7,102 @@
     color: #fff;
 }
 
-.chatBox {
-    clear: both;
-    position: relative;
-    padding-left: 10%;
-    padding-right: 10%;
+.useBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 8%;
+    justify-content: space-between;
+    padding-left: 25%;
+    padding-right: 25%;
 }
-  
-.chatBox .arrow {
-    width: 20px;
-    height: 20px;
-    overflow: hidden;
-    position: relative;
-    float: left;
-    top: 16px;
-    right: -1px;
+
+.contentBox{
+    text-align: center;
+    width: 30em;
+    background: linear-gradient(rgba(99, 96, 96, 0.308), rgba(99, 96, 96, 0.308));
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    padding: 15px 20px;
+    border-radius: 40px;
 }
-  
-.chatBox .arrow .outer {
-    width: 0;
-    height: 0;
-    border-right: 20px solid #000000;
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    position: absolute;
-    top: 0;
-    left: 0;
+
+.contentBox h3{
+    font-size: 25px;
+    padding-bottom: 2%;
+    border-bottom: 3px solid rgba(24, 228, 41, 0.822);
 }
-  
-.chatBox .arrow .inner {
-    width: 0;
-    height: 0;
-    border-right: 20px solid #ffffff;
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    position: absolute;
-    top: 0;
-    left: 2px;
+
+.contentBox ul{
+    padding: 10px 20px;
+    text-align: justify;
 }
-  
-.chatBox .message-body {
-    float: left;
-    width: 300px;
-    height: auto;
-    border: 1px solid #CCC;
-    background-color: #ffffff;
-    border: 1px solid #000000;
-    padding: 6px 8px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -o-border-radius: 5px;
-    border-radius: 5px;
+.contentBox li{
+    padding: 10px 0 0 0;
+    line-height: 1.8;
+    font-size: 20px;
+    text-align: left;
+    margin-left: 2%;
 }
-  
-.chatBox .message-body p {
-    margin: 0;
+
+.stepBox{
+    display: flex;
+    align-items: center;
+    background: linear-gradient(rgba(99, 96, 96, 0.308), rgba(99, 96, 96, 0.308));
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    padding: 15px 20px;
+    border-radius: 40px;
+    margin-left: 5%; 
+}
+
+.stepBox .boxHead h1{
+    font-size: 45px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: rgba(24, 228, 41, 0.822);
+}
+
+.stepBox .boxImg img{
+    width: 70%;
+}
+
+.useBox2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 4%;
+    justify-content: space-between;
+    padding-left: 24%;
+    padding-right: 21%;
+}
+
+.useBox2 .stepBox{
+    display: flex;
+    align-items: center;
+    background: linear-gradient(rgba(99, 96, 96, 0.308), rgba(99, 96, 96, 0.308));
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    padding: 15px 20px;
+    border-radius: 40px;
+}
+
+.useBox2 .contentBox ul{
+    padding: 10px 20px;
+    text-align: justify;
+}
+
+.useBox2 .contentBox li{
+    padding: 10px 0 0 0;
+    line-height: 1.8;
+    font-size: 20px;
+    text-align: left;
+    margin-left: 2%;
+}
+
+.useBox3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 4%;
+    justify-content: space-between;
+    padding-left: 24%;
+    padding-right: 23%;
 }
