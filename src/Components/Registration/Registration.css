@@ -86,6 +86,6 @@
 }
 
 .loginLink p a:hover{
-    text-decoration: underline;
+    font-weight: 700;
     color: rgb(24, 228, 41);
 }
