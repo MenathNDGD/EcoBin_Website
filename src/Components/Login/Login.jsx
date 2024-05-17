@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Navbar from '../Navbar/Navbar'
 import Footer from '../Footer/Footer'
 import './Login.css'
@@ -6,8 +6,25 @@ import LoginImg from '../../assets/loginImg.png'
 import { MdEmail } from "react-icons/md";
 import { FaLock } from "react-icons/fa";
 import { Link } from 'react-router-dom'
+import { signInWithEmailAndPassword } from 'firebase/auth'
+import { auth } from '../../Firebase'
+import { toast } from 'react-toastify'
 
 const Login = () => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      await signInWithEmailAndPassword(auth, email, password);
+      console.log("User Logged In Successfully...!");
+      toast.success("User Logged In Successfully...!", {position: "top-center", });
+    } catch (error) {
+      console.log(error.message);
+      toast.error(error.message, {position: "top-center", });
+    }
+  };
 
   return (
     <div className='hero'>
@@ -17,14 +34,26 @@ const Login = () => {
           <img src={LoginImg} alt="" />
         </div>
         <div className="loginForm">
-          <form action=''>
+          <form onSubmit={handleSubmit}>
             <h1>Login</h1>
             <div className="inputBox">
-              <input type='email' placeholder='Email Address' required />
+              <input 
+                type='email'
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder='Email Address' 
+                required
+              />
               <MdEmail  className='icon'/>
             </div>
             <div className="inputBox">
-              <input type='password' placeholder='Password' required />
+              <input 
+                type='password'
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                placeholder='Password' 
+                required
+              />
               <FaLock className='icon'/>
             </div>
             <div className="rememberForgot">
