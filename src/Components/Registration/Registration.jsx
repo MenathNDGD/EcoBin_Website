@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './Registration.css'
 import Navbar from '../../Components/Navbar/Navbar'
+import BackToTop from '../BackToTop/BackToTop.jsx'
 import RegistrationImg from '../../assets/RegImg.png'
 import { MdEmail } from "react-icons/md";
 import { FaLock } from "react-icons/fa";
@@ -48,8 +49,9 @@ const Registration = () => {
   };
 
   return (
-    <div className='hero'>
+    <div className='bgReg'>
         <Navbar/>
+        <BackToTop/>
         <div className="regContent">
           <div className="regImg">
             <img src={RegistrationImg} alt="" />
@@ -113,7 +115,7 @@ const Registration = () => {
               <div className="agree">
                 <label><input type='checkbox'/>I Agree to the Terms & Conditions</label>
               </div>
-              <button type='submit'>Register</button>
+              <button type='submit'><Link to="/user-profile">Register</Link></button>
               <div className="loginLink">
                 <p>Already Have an Account? <Link to="/user-login">Login Now!</Link></p>
               </div>
