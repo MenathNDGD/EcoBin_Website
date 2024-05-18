@@ -2,22 +2,25 @@
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
+import { getStorage } from 'firebase/storage';
 
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyASGQ_1e3tkNEx_hCClLxinnHoVwTuUMdM",
-  authDomain: "ecobin-3637f.firebaseapp.com",
-  projectId: "ecobin-3637f",
-  storageBucket: "ecobin-3637f.appspot.com",
-  messagingSenderId: "194990816200",
-  appId: "1:194990816200:web:ea74708fd8bb8627af9efd"
+  apiKey: "AIzaSyCAu0rcRm5nFiDNRydaaVtG2GWgYb4pROk",
+  authDomain: "ecobintest.firebaseapp.com",
+  projectId: "ecobintest",
+  storageBucket: "ecobintest.appspot.com",
+  messagingSenderId: "331033004273",
+  appId: "1:331033004273:web:095d05316396812727c150"
 }
 
 // Initialize Firebase
-export const app = initializeApp(firebaseConfig);
+const app = initializeApp(firebaseConfig);
 
-export const auth=getAuth();
-export const db = getFirestore(app);
-export default app;
+const auth = getAuth(app);
+const db = getFirestore(app);
+const storage = getStorage(app);
+
+export { auth, db, storage };
