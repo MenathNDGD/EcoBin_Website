@@ -1,18 +1,20 @@
 import React from 'react'
 import './Home.css'
-import './Script'
+import './Script.js'
 import MidPic from '../../assets/midPic.png'
 import JoinUsPic from '../../assets/volunteer.png'
 import QRImg from '../../assets/qr.png'
 import Navbar from '../Navbar/Navbar'
 import Footer from '../Footer/Footer'
 import { Link } from 'react-router-dom'
+import BackToTop from '../BackToTop/BackToTop.jsx'
 
 const Home = () => {
   
   return (
     <div className='hero'>
       <Navbar/>
+      <BackToTop/>
       <div className="hero-text">
         <div className="text-head">
           <h1>ECO</h1>
@@ -64,7 +66,7 @@ const Home = () => {
         <div className="volText">
           <h1>Become an awsome <span>Volunteer</span></h1>
           <p>Join us in revolutionizing waste management practices with our innovative EcoBin-Smart Garbage Management System, which optimizes routes, reduces operational costs, and empowers efficient waste disposal through real-time monitoring and automated sorting technologies.</p>
-          <button className='btn2'><Link to="/login">JOIN US</Link></button>
+          <button className='btn2'><Link to="/user-login">JOIN US</Link></button>
         </div>
         <div className="volImg">
           <img src={JoinUsPic} alt="" />
