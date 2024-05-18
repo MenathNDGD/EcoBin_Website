@@ -1,7 +1,7 @@
-.hero{
+.background{
     width: 100%;
-    min-height: 10vh;
-    background: linear-gradient(rgba(22, 22, 22, 0.5), rgba(22, 22, 22, 0.5)), url('../../assets/home_bg.png') no-repeat;
+    max-height: auto;
+    background: linear-gradient(rgba(22, 22, 22, 0.5), rgba(22, 22, 22, 0.5)), url('../../assets/home_bg.png');
     background-size: cover;
     background-position: center;
     color: #fff;

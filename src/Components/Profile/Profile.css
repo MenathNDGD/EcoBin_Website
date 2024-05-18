@@ -1,0 +1,83 @@
+.hero{
+    width: 100%;
+    min-height: auto;
+    background: linear-gradient(rgba(22, 22, 22, 0.5), rgba(22, 22, 22, 0.5)), url('../../assets/home_bg.png');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.profileContent {
+    padding: 20px;
+    width: auto; 
+    text-align: center;
+}
+
+.profileContent h1 {
+    padding-top: 7%;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.hero .profileContent .fields{
+    text-align: center;
+}
+
+.fields .userAvatar{
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    border-width: 5px;
+    border-color: rgba(24, 228, 41, 0.822);
+    border-style: solid;
+}
+
+.profileContent .profileInfo {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    text-align: center;
+}
+  
+.profileContent .profileInfo p {
+    text-align: center;
+    font-size: 25px;
+    margin: 10px 0;
+}
+  
+.profileContent .profileInfo p strong {
+    color: #ffffff;
+}
+
+.profileContent button{
+    text-align: center;
+    width: 7%;
+    height: 50px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 22px;
+    color: #121316;
+    font-weight: 700;
+    margin-top: 1%;
+}
+
+.profileContent button:hover{
+    background-color: rgb(24, 228, 41);
+}
+  
+/*@media (max-width: 768px) {
+    .profileContent {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .profileInfo p {
+        font-size: 16px;
+    }
+}*/

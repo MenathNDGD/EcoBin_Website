@@ -7,6 +7,7 @@ import Login from './Components/Login/Login'
 import Registration from './Components/Registration/Registration'
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer } from 'react-toastify'
+import Profile from './Components/Profile/Profile'
 
 
 const App = () => {
@@ -14,10 +15,11 @@ const App = () => {
     <div>
       <Routes>
         <Route path='/' element={<Home/>}/>
-        <Route path='/how-to-use' element={<HowToUse/>}/>
-        <Route path='/about-us' element={<AboutUs/>}/>
-        <Route path='/user-login' element={<Login/>}/>
-        <Route path='/user-reg' element={<Registration/>}/>
+        <Route path='/how-to-use' element = {<HowToUse/>}/>
+        <Route path='/about-us' element = {<AboutUs/>}/>
+        <Route path='/user-login' element = {<Login/>}/>
+        <Route path='/user-reg' element = {<Registration/>}/>
+        <Route path='/user-profile' element = {<Profile/>}/>
       </Routes>
       <ToastContainer/>
     </div>
