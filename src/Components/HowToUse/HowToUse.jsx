@@ -2,6 +2,7 @@ import React from 'react'
 import './HowToUse.css'
 import Navbar from '../Navbar/Navbar'
 import Footer from '../Footer/Footer'
+import BackToTop from '../BackToTop/BackToTop.jsx'
 import Step01Img from '../../assets/Step01.png'
 import Step02Img from '../../assets/Step02.png'
 import Step03Img from '../../assets/Step03.png'
@@ -16,6 +17,7 @@ const HowToUse = () => {
   return (
     <div className='hero'>
       <Navbar/>
+      <BackToTop/>
       <div className="useBox">
         <div className="contentBox">
           <h3>User Registration/Login</h3>
