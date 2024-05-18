@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Navbar from '../Navbar/Navbar'
 import Footer from '../Footer/Footer'
+import BackToTop from '../BackToTop/BackToTop.jsx'
 import './Login.css'
 import LoginImg from '../../assets/loginImg.png'
 import { MdEmail } from "react-icons/md";
@@ -19,6 +20,7 @@ const Login = () => {
     try {
       await signInWithEmailAndPassword(auth, email, password);
       console.log("User Logged In Successfully...!");
+      window.location.href = "/user-profile";
       toast.success("User Logged In Successfully...!", {position: "top-center", });
     } catch (error) {
       console.log(error.message);
@@ -27,8 +29,9 @@ const Login = () => {
   };
 
   return (
-    <div className='hero'>
+    <div className='background'>
       <Navbar/>
+      <BackToTop/>
       <div className="loginContent">
         <div className="loginImg">
           <img src={LoginImg} alt="" />
@@ -60,7 +63,7 @@ const Login = () => {
               <label><input type='checkbox'/>Remember me</label>
               <a href='#'>Forgot Password?</a>
             </div>
-            <button type='submit'>Login</button>
+            <button type='submit'><Link to="/user-profile">Login</Link></button>
             <div className="regLink">
               <p>Don't Have an Account? <Link to="/user-reg">Register Now!</Link></p>
             </div>
