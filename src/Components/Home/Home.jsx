@@ -1,15 +1,33 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Home.css'
-import './Script.js'
 import MidPic from '../../assets/midPic.png'
 import JoinUsPic from '../../assets/volunteer.png'
 import QRImg from '../../assets/qr.png'
 import Navbar from '../Navbar/Navbar'
 import Footer from '../Footer/Footer'
 import { Link } from 'react-router-dom'
-import BackToTop from '../BackToTop/BackToTop.jsx'
+import BackToTop from '../BackToTop/BackToTop'
 
 const Home = () => {
+
+  useEffect(() => {
+    let valueDisplays = document.querySelectorAll('.num');
+    let interval = 4000;
+
+    valueDisplays.forEach((valueDisplay) => {
+      let startValue = 0;
+      let endValue = parseInt(valueDisplay.getAttribute('data-val'));
+      let difference = endValue - startValue;
+      let duration = Math.floor(interval / difference);
+      let counter = setInterval(function () {
+        startValue += 1;
+        valueDisplay.textContent = startValue;
+        if (startValue >= endValue) {
+          clearInterval(counter);
+        }
+      }, duration);
+    });
+  }, []);
   
   return (
     <div className='hero'>
