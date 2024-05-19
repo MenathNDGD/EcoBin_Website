@@ -2,7 +2,7 @@ import React from 'react'
 import './AboutUs.css'
 import Navbar from '../Navbar/Navbar'
 import Footer from '../Footer/Footer'
-import BackToTop from '../BackToTop/BackToTop.jsx'
+import BackToTop from '../BackToTop/BackToTop'
 import VisionImg from '../../assets/vision.png'
 import MissionImg from '../../assets/mission.png'
 
