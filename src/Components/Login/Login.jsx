@@ -1,32 +1,14 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Navbar from '../Navbar/Navbar'
 import Footer from '../Footer/Footer'
-import BackToTop from '../BackToTop/BackToTop.jsx'
+import BackToTop from '../BackToTop/BackToTop'
 import './Login.css'
 import LoginImg from '../../assets/loginImg.png'
 import { MdEmail } from "react-icons/md";
 import { FaLock } from "react-icons/fa";
 import { Link } from 'react-router-dom'
-import { signInWithEmailAndPassword } from 'firebase/auth'
-import { auth } from '../../Firebase'
-import { toast } from 'react-toastify'
 
 const Login = () => {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    try {
-      await signInWithEmailAndPassword(auth, email, password);
-      console.log("User Logged In Successfully...!");
-      window.location.href = "/user-profile";
-      toast.success("User Logged In Successfully...!", {position: "top-center", });
-    } catch (error) {
-      console.log(error.message);
-      toast.error(error.message, {position: "top-center", });
-    }
-  };
 
   return (
     <div className='background'>
@@ -37,13 +19,11 @@ const Login = () => {
           <img src={LoginImg} alt="" />
         </div>
         <div className="loginForm">
-          <form onSubmit={handleSubmit}>
+          <form>
             <h1>Login</h1>
             <div className="inputBox">
               <input 
-                type='email'
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
+                type='email'             
                 placeholder='Email Address' 
                 required
               />
@@ -52,8 +32,6 @@ const Login = () => {
             <div className="inputBox">
               <input 
                 type='password'
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
                 placeholder='Password' 
                 required
               />
