@@ -226,3 +226,115 @@ i{
     font-size: 20px;
     font-weight: 500;
 }
+
+@media (max-width: 1200px) {
+    .text-head h1 {
+        font-size: 50px;
+    }
+
+    .text-head2 h1 {
+        font-size: 30px;
+    }
+
+    .hero p, .achive p, .volunteer .volText p, .download .scanText ol li {
+        font-size: 22px;
+    }
+
+    .hero-mid, .achive, .volunteer, .download {
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+}
+
+@media (max-width: 992px) {
+    .hero-text, .hero-mid, .achive, .volunteer, .download {
+        flex-direction: column;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .hero p, .achive p, .volunteer .volText p, .download .scanText ol li {
+        font-size: 20px;
+    }
+
+    .text-head, .text-head2 {
+        padding-right: 0;
+    }
+
+    .text-head h1, .text-head2 h1 {
+        font-size: 36px;
+    }
+
+    .download .scanImg img {
+        width: 20em;
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .download .scanText {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .download .scanText h1 {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .download .scanText button {
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero p, .achive p, .volunteer .volText p, .download .scanText ol li {
+        font-size: 18px;
+    }
+
+    .text-head h1, .text-head2 h1 {
+        font-size: 30px;
+    }
+
+    .achive .wrapper {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .achive .wrapper .contain {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero p, .achive p, .volunteer .volText p, .download .scanText ol li {
+        font-size: 16px;
+    }
+
+    .text-head h1, .text-head2 h1 {
+        font-size: 24px;
+    }
+
+    .hero-mid img, .download .scanImg img {
+        width: 100%;
+        height: auto;
+    }
+
+    .download {
+        flex-direction: column;
+        margin-left: 10%;
+        margin-right: 10%;
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .download .scanText {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .download .scanText button {
+        margin-left: 0;
+    }
+}
