@@ -9,7 +9,6 @@
 
 .profileContent {
     padding: 20px;
-    width: auto; 
     text-align: center;
 }
 
@@ -34,6 +33,10 @@
     border-style: solid;
 }
 
+.fields .userAvatar:hover {
+    transform: scale(1.1);
+}
+
 .profileContent .profileInfo {
     display: flex;
     flex-direction: column;
@@ -55,7 +58,7 @@
     text-align: center;
     width: 7%;
     height: 50px;
-    background: #fff;
+    background: rgba(24, 228, 41, 0.822);
     border: none;
     outline: none;
     border-radius: 40px;
@@ -67,17 +70,35 @@
     margin-top: 1%;
 }
 
-.profileContent button:hover{
-    background-color: rgb(24, 228, 41);
+
+
+.profileContent button:hover {
+    background-color: #fff;
+    transform: scale(1.05);
+    color: rgba(24, 228, 41, 0.822);
 }
   
-/*@media (max-width: 768px) {
+@media (max-width: 768px) {
     .profileContent {
-        margin: 10px;
-        padding: 15px;
+        padding: 20px;
     }
 
-    .profileInfo p {
-        font-size: 16px;
+    .profileContent h1 {
+        font-size: 2rem;
     }
-}*/
+
+    .fields .userAvatar {
+        width: 120px;
+        height: 120px;
+    }
+
+    .profileContent .profileInfo p {
+        font-size: 1rem;
+    }
+
+    .profileContent button {
+        width: 70%;
+        padding: 12px;
+        font-size: 1rem;
+    }
+}

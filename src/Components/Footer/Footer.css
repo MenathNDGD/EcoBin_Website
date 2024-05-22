@@ -75,3 +75,86 @@ h1{
 .colRight i:hover{
     color: rgb(24, 228, 41);
 }
+
+@media (max-width: 1200px) {
+    .footer .row {
+        padding-left: 100px;
+    }
+
+    .colLeft p, .colRight p {
+        font-size: 24px;
+    }
+
+    .colLeft ol li, .colMid ol li {
+        font-size: 20px;
+    }
+
+    .footer .footer-legal p {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 992px) {
+    .footer .row {
+        padding-left: 50px;
+    }
+
+    .colLeft p, .colRight p {
+        font-size: 22px;
+    }
+
+    .colLeft ol li, .colMid ol li {
+        font-size: 18px;
+    }
+
+    .footer .footer-legal p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer .row {
+        padding-left: 20px;
+    }
+
+    .colRight, .colMid, .colLeft {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .colLeft p, .colRight p {
+        font-size: 20px;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .colLeft ol li, .colMid ol li {
+        font-size: 16px;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .footer .footer-legal p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 576px) {
+    .footer .row {
+        padding-left: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .colLeft p, .colRight p {
+        font-size: 18px;
+    }
+
+    .colLeft ol li, .colMid ol li {
+        font-size: 14px;
+    }
+
+    .footer .footer-legal p {
+        font-size: 16px;
+    }
+}

@@ -120,3 +120,99 @@
     font-size: 35px;
     line-height: 2.5;
 }
+
+@media (max-width: 1200px) {
+    .hero .aboutText h1 {
+        font-size: 60px;
+    }
+
+    .hero .aboutText p {
+        font-size: 28px;
+    }
+
+    .aboutMid .VisionBody h1, .aboutMid1 .VisionBody1 h1 {
+        font-size: 45px;
+    }
+
+    .aboutMid .VisionBody p, .aboutMid1 .VisionBody1 p {
+        font-size: 25px;
+    }
+
+    .aboutPara p {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 992px) {
+    .aboutSec {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .aboutMid img, .aboutMid1 img {
+        max-width: 400px;
+        float: none;
+        margin: 0 auto 20px;
+        display: block;
+    }
+
+    .aboutMid .VisionBody, .aboutMid1 .VisionBody1 {
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .aboutMid .VisionBody i, .aboutMid1 .VisionBody1 i {
+        float: none;
+        margin: 0 auto;
+        width: 100px;
+    }
+
+    .aboutMid .VisionBody p, .aboutMid1 .VisionBody1 p {
+        margin: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero .aboutText h1 {
+        font-size: 50px;
+    }
+
+    .hero .aboutText p {
+        font-size: 24px;
+    }
+
+    .aboutMid .VisionBody h1, .aboutMid1 .VisionBody1 h1 {
+        font-size: 35px;
+    }
+
+    .aboutMid .VisionBody p, .aboutMid1 .VisionBody1 p {
+        font-size: 20px;
+    }
+
+    .aboutPara p {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero .aboutText h1 {
+        font-size: 40px;
+        padding-top: 15%;
+    }
+
+    .hero .aboutText p {
+        font-size: 20px;
+    }
+
+    .aboutMid .VisionBody h1, .aboutMid1 .VisionBody1 h1 {
+        font-size: 28px;
+    }
+
+    .aboutMid .VisionBody p, .aboutMid1 .VisionBody1 p {
+        font-size: 18px;
+    }
+
+    .aboutPara p {
+        font-size: 20px;
+    }
+}
