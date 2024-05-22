@@ -12,3 +12,43 @@
     border-radius: 50%;
     border-style: none;
 }
+
+@media (max-width: 1200px) {
+    .backToTop button {
+        bottom: 40px;
+        right: 40px;
+        height: 45px;
+        width: 45px;
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 992px) {
+    .backToTop button {
+        bottom: 30px;
+        right: 30px;
+        height: 40px;
+        width: 40px;
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .backToTop button {
+        bottom: 20px;
+        right: 20px;
+        height: 35px;
+        width: 35px;
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 576px) {
+    .backToTop button {
+        bottom: 15px;
+        right: 15px;
+        height: 30px;
+        width: 30px;
+        font-size: 20px;
+    }
+}
