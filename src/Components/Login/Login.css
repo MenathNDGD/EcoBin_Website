@@ -129,3 +129,95 @@
     font-weight: 700;
     color: rgb(24, 228, 41);
 }
+
+@media (max-width: 1200px) {
+    .loginContent {
+        flex-direction: column;
+        padding: 5% 10%;
+    }
+
+    .loginContent .loginImg img {
+        width: 60%;
+        margin-left: 0;
+    }
+
+    .loginForm {
+        margin-right: 0;
+        width: 100%;
+        padding: 20px 30px;
+    }
+}
+
+@media (max-width: 992px) {
+    .loginForm h1 {
+        font-size: 35px;
+    }
+
+    .inputBox input {
+        font-size: 16px;
+    }
+
+    .loginForm button {
+        width: 50%;
+        font-size: 20px;
+    }
+
+    .loginForm .regLink p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .loginForm h1 {
+        font-size: 30px;
+    }
+
+    .inputBox input {
+        font-size: 14px;
+    }
+
+    .loginForm button {
+        width: 60%;
+        font-size: 18px;
+    }
+
+    .loginForm .regLink p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .background {
+        padding: 5%;
+    }
+
+    .loginContent {
+        padding: 5% 5%;
+    }
+
+    .loginContent .loginImg img {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+
+    .loginForm {
+        padding: 15px 20px;
+    }
+
+    .loginForm h1 {
+        font-size: 25px;
+    }
+
+    .inputBox input {
+        font-size: 12px;
+    }
+
+    .loginForm button {
+        width: 70%;
+        font-size: 16px;
+    }
+
+    .loginForm .regLink p {
+        font-size: 12px;
+    }
+}
