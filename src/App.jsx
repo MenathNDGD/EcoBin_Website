@@ -8,6 +8,8 @@ import Registration from './Components/Registration/Registration'
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer } from 'react-toastify'
 import Profile from './Components/Profile/Profile'
+import ScrollToTop from './Components/ScrollToTop/ScrollToTop'
+import ForgotPassword from './Components/ForgotPassword/ForgotPassword'
 
 
 const App = () => {
@@ -20,8 +22,10 @@ const App = () => {
         <Route path='/user-login' element = {<Login/>}/>
         <Route path='/user-reg' element = {<Registration/>}/>
         <Route path='/user-profile' element = {<Profile/>}/>
+        <Route path='/forgot-password' element = {<ForgotPassword/>}/>
       </Routes>
       <ToastContainer/>
+      <ScrollToTop/>
     </div>
   )
 }
