@@ -20,6 +20,18 @@
     font-weight: 600;
 }
 
+.profileInfo p input{
+    width: 30%;
+    height: 100%;
+    background: transparent;
+    outline: none;
+    border: 2px solid rgba(24, 228, 41, 0.822);
+    border-radius: 40px;
+    font-size: 20px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+}
+
 .hero .profileContent .fields{
     text-align: center;
 }
@@ -35,6 +47,7 @@
     border-width: 5px;
     border-color: rgba(24, 228, 41, 0.822);
     border-style: solid;
+    cursor: pointer;
 }
 
 .fields .userAvatar:hover {
@@ -62,6 +75,10 @@
     color: #ffffff;
 }
 
+.profileContent .button-group{
+    gap: 15px;
+}
+
 .profileContent button{
     text-align: center;
     width: 7%;
@@ -75,13 +92,19 @@
     font-size: 22px;
     color: #121316;
     font-weight: 700;
-    margin-top: 1%;
+    margin-top: 1.5%;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
 }
 
 .profileContent button:hover {
     background-color: #fff;
     transform: scale(1.05);
     color: rgba(24, 228, 41, 0.822);
+}
+
+button[type="button"] {
+    margin-right: 15px; 
 }
 
 .loading-spinner {
