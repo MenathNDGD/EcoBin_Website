@@ -14,7 +14,16 @@ const Profile = () => {
   const [loading, setLoading] = useState(true);
   const [profilePic, setProfilePic] = useState(DefaultUserPic);
   const [uploading, setUploading] = useState(false);
+  const [editing, setEditing] = useState(false);
+  const [originalDetails, setOriginalDetails] = useState(null);
   const fileInputRef = useRef(null);
+  const [formData, setFormData] = useState({
+    username: '',
+    email: '',
+    contactNumber: '',
+    address: '',
+    city: ''
+  });
 
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged(async (user) => {
@@ -27,9 +36,11 @@ const Profile = () => {
           if (docSnap.exists()) {
             const userData = docSnap.data();
             setUserDetails(userData);
+            setOriginalDetails(userData);
             if (userData.profilePic) {
               setProfilePic(userData.profilePic);
             }
+            setFormData(userData);
             console.log("User Data:", docSnap.data());
           } else {
             console.log("No such document!");
@@ -76,7 +87,35 @@ const Profile = () => {
     fileInputRef.current.click();
   };
 
-  async function handleLogout() {
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData(prevState => ({ ...prevState, [name]: value }));
+  };
+
+  const handleEditClick = () => {
+    setEditing(true);
+  };
+
+  const handleSaveClick = async () => {
+    try {
+      const userRef = doc(db, "Users", auth.currentUser.uid);
+      await updateDoc(userRef, formData);
+      setUserDetails(formData);
+      setOriginalDetails(formData);
+      setEditing(false);
+      toast.success("User Details Updated Successfully!", { position: "top-center" });
+    } catch (error) {
+      console.error("Error Updating User Details: ", error);
+      toast.error(error.message, { position: "top-center" });
+    }
+  };
+
+  const handleCancelClick = () => {
+    setFormData(originalDetails);
+    setEditing(false);
+  };
+
+  const handleLogout = async () => {
     try {
       await auth.signOut();
       window.location.href = "/user-login";
@@ -84,7 +123,7 @@ const Profile = () => {
     } catch (error) {
       console.error("Error Logging Out: ", error.message);
     }
-  }
+  };
 
   return (
     <div className='hero'>
@@ -115,13 +154,40 @@ const Profile = () => {
                 />
               </div>
               <div className="profileInfo">
-                <p><strong>Username: {userDetails.username}</strong></p>
-                <p><strong>Email: {userDetails.email}</strong></p>
-                <p><strong>Contact Number: {userDetails.contactNumber}</strong></p>
-                <p><strong>Address: {userDetails.address}</strong></p>
-                <p><strong>City: {userDetails.city}</strong></p>
+                <p>
+                  <strong>Username: </strong>
+                  {editing ? <input name="username" value={formData.username} onChange={handleInputChange} /> : userDetails.username}
+                </p>
+                <p>
+                  <strong>Email: </strong>
+                  {editing ? <input name="email" value={formData.email} onChange={handleInputChange} /> : userDetails.email}
+                </p>
+                <p>
+                  <strong>Contact Number: </strong>
+                  {editing ? <input name="contactNumber" value={formData.contactNumber} onChange={handleInputChange} /> : userDetails.contactNumber}
+                </p>
+                <p>
+                  <strong>Address: </strong>
+                  {editing ? <input name="address" value={formData.address} onChange={handleInputChange} /> : userDetails.address}
+                </p>
+                <p>
+                  <strong>City: </strong>
+                  {editing ? <input name="city" value={formData.city} onChange={handleInputChange} /> : userDetails.city}
+                </p>
               </div>
-              <button type='submit' onClick={handleLogout}>Logout</button>
+              <div className="button-group">
+                {editing ? (
+                  <>
+                    <button type='button' onClick={handleSaveClick}>Save</button>
+                    <button type='button' onClick={handleCancelClick}>Cancel</button>
+                  </>
+                ) : (
+                  <>
+                    <button type='button' onClick={handleEditClick}>Edit</button>
+                    <button type='button' onClick={handleLogout}>Logout</button>
+                  </>
+                )}
+              </div>
             </div>
           </>
         ) : (
@@ -133,6 +199,6 @@ const Profile = () => {
       <Footer />
     </div>
   );
-}
+};
 
 export default Profile;
