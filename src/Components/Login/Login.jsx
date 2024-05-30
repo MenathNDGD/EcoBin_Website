@@ -6,6 +6,7 @@ import './Login.css'
 import LoginImg from '../../assets/loginImg.png'
 import { MdEmail } from "react-icons/md";
 import { FaLock } from "react-icons/fa";
+import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { Link } from 'react-router-dom'
 import { signInWithEmailAndPassword } from 'firebase/auth'
 import { auth } from '../../Firebase'
@@ -15,6 +16,7 @@ const Login = () => {
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [showPassword, setShowPassword] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -27,6 +29,10 @@ const Login = () => {
       console.log(error.message);
       toast.error(error.message, { position: "top-center", });
     }
+  };
+
+  const togglePasswordVisibility = () => {
+    setShowPassword(prevState => !prevState);
   };
 
   return (
@@ -52,17 +58,22 @@ const Login = () => {
             </div>
             <div className="inputBox">
               <input 
-                type='password'
+                type={showPassword ? 'text' : 'password'}
                 placeholder='Password'
                 value={password}
                 onChange={(e) => setPassword(e.target.value)} 
                 required
               />
               <FaLock className='icon'/>
+              {showPassword ? (
+                <FaEyeSlash className='togglePasswordIcon' onClick={togglePasswordVisibility} />
+              ) : (
+                <FaEye className='togglePasswordIcon' onClick={togglePasswordVisibility} />
+              )}
             </div>
             <div className="rememberForgot">
-              <label><input type='checkbox'/>Remember me</label>
-              <a href='#'>Forgot Password?</a>
+              <label><input type='checkbox'/>Remember Me</label>
+              <Link to="/forgot-password">Forgot Password?</Link>
             </div>
             <button type='submit'>Login</button>
             <div className="regLink">
