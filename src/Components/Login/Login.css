@@ -71,6 +71,16 @@
     color: rgb(24, 228, 41);
 }
 
+.inputBox .togglePasswordIcon {
+    position: absolute;
+    right: 60px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 25px;
+    color: rgb(24, 228, 41);
+}
+
 .loginForm .rememberForgot{
     display: flex;
     justify-content: space-between;
