@@ -180,6 +180,10 @@ i{
     padding-right: 6%;
 }
 
+.volunteer .volText button:hover{
+    transform: scale(1.1);
+}
+
 .download{
     display: flex;
     align-items: center;
@@ -225,6 +229,10 @@ i{
     margin-left: 28%;
     font-size: 20px;
     font-weight: 500;
+}
+
+.download .scanText button:hover{
+    transform: scale(1.1);
 }
 
 @media (max-width: 1200px) {
