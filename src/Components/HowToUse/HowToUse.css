@@ -2,109 +2,78 @@
     width: 100%;
     min-height: 310vh;
     background: linear-gradient(rgba(22, 22, 22, 0.5), rgba(22, 22, 22, 0.5)), url('../../assets/home_bg.png');
-    background-size: cover;
+    background-size: auto;
     background-position: center;
     color: #fff;
 }
 
-.useBox{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.boxContent{
     padding-top: 8%;
-    justify-content: space-between;
-    padding-left: 25%;
-    padding-right: 25%;
+    padding-left: 16%;
+    padding-right: 16%;
 }
 
-.contentBox{
-    text-align: center;
-    width: 30em;
-    background: linear-gradient(rgba(99, 96, 96, 0.308), rgba(99, 96, 96, 0.308));
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
-    padding: 15px 20px;
-    border-radius: 40px;
-}
-
-.contentBox h3{
-    font-size: 25px;
-    padding-bottom: 2%;
-    border-bottom: 3px solid rgba(24, 228, 41, 0.822);
-}
-
-.contentBox ul{
-    padding: 10px 20px;
-    text-align: justify;
-}
-.contentBox li{
-    padding: 10px 0 0 0;
-    line-height: 1.8;
-    font-size: 20px;
-    text-align: left;
-    margin-left: 2%;
-}
-
-.stepBox{
+.useBox {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    margin-bottom: 40px;
     background: linear-gradient(rgba(99, 96, 96, 0.308), rgba(99, 96, 96, 0.308));
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
-    padding: 15px 20px;
-    border-radius: 40px;
-    margin-left: 5%; 
+    border-radius: 30px;
 }
 
-.stepBox .boxHead h1{
-    font-size: 45px;
+.useBox:hover{
+    transform: scale(1.05);
+}
+
+.useBox .contentBox {
+    flex: 1;
+    margin-right: 20px;
+}
+  
+.useBox .stepBox {
+    flex: 0 0 200px;
+    text-align: center;
+}
+  
+.stepBox .boxHead h1 {
+    font-size: 38px;
     font-weight: 600;
     padding: 15px 30px;
     color: rgba(24, 228, 41, 0.822);
 }
-
-.stepBox .boxImg img{
-    width: 70%;
+  
+.stepBox .boxImg img {
+    max-width: 100%;
+    border-radius: 10px;
 }
-
-.useBox2{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 4%;
-    justify-content: space-between;
-    padding-left: 24%;
-    padding-right: 21%;
+  
+.contentBox h3 {
+    color: #ffffff;
+    font-size: 28px;
+    border-bottom: 3px solid rgba(24, 228, 41, 0.822);
+    padding-bottom: 10px;
+   
 }
-
-.useBox2 .stepBox{
-    display: flex;
-    align-items: center;
-    background: linear-gradient(rgba(99, 96, 96, 0.308), rgba(99, 96, 96, 0.308));
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
-    padding: 15px 20px;
-    border-radius: 40px;
+  
+.contentBox ul {
+    list-style: none;
 }
-
-.useBox2 .contentBox ul{
-    padding: 10px 20px;
-    text-align: justify;
-}
-
-.useBox2 .contentBox li{
-    padding: 10px 0 0 0;
-    line-height: 1.8;
+  
+.contentBox ul li {
     font-size: 20px;
-    text-align: left;
-    margin-left: 2%;
+    color: #ffffff;
+    line-height: 3;
 }
-
-.useBox3{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 4%;
-    justify-content: space-between;
-    padding-left: 24%;
-    padding-right: 23%;
+  
+.contentBox ul li:before {
+    content: '•';
+    color: #299200;
+    font-size: 25px;
+    padding-right: 10px;
+    font-weight: 1000;
 }
 
 @media (max-width: 1200px) {
