@@ -20,100 +20,63 @@
     padding-top: 15px;
 }
 
-.aboutSec{
-    background: linear-gradient(rgba(163, 151, 151, 0.301), rgba(163, 151, 151, 0.301));
-    margin-left: 10%;
-    margin-right: 10%;
-    border-radius: 40px;
-}
-
-.aboutMid{
-    margin-top: 7%;
-    margin: 100px auto;
-    border-bottom: 5px solid #ffffff;
-}
-
-.aboutMid img{
-    max-width: 500px;
-    float: left;
-    margin-right: 35px;
-    margin-top: 3%;
-    padding-left: 50px;
-}
-
-.VisionBody{
-    padding-top: 18px;
-    border-radius: 60px;
-    margin-right: 13%;
-}
-
-.aboutMid .VisionBody i{
-    float: left;
-    color: #ffffff;
-    width: 155px;
-    margin-left: 15%;
-    padding-top: 15px;
-}
-
-.aboutMid .VisionBody h1{
-    font-size: 55px;
-    padding-top: 15px;
-}
-
-.aboutMid .VisionBody h1 span{
-    color: rgb(24, 228, 41);
-}
-
-.aboutMid .VisionBody p{
-    font-size: 30px;
-    line-height: 2.3;
-    margin-right: -21%;
-    padding-bottom: 35px;
-}
-
-.aboutMid1{
-    margin: 100px auto;
+.aboutSec {
     display: flex;
-    margin-top: 8%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 0;
+    padding-left: 10%;
+    padding-right: 10%;
 }
-
-.aboutMid1 img{
-    max-width: 450px;
-    float: right;
-    padding-right: 40px;
-    margin-top: -5%;
-    padding-bottom: 35px;
+  
+.aboutMid, .aboutMid1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 800px;
+    margin: 20px;
+    padding: 20px;
+    background: linear-gradient(135deg, rgba(63, 62, 62, 0.7), rgba(63, 62, 62, 0.7));
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
 }
-
-.VisionBody1{
-    padding-top: 18px;
-    border-radius: 60px;
-    margin-right: -24.4%;
-    margin-top: -5.9%;
+  
+.aboutMid:hover, .aboutMid1:hover {
+    transform: translateY(-10px);
 }
-
-.aboutMid1 .VisionBody1 i{
-    float: left;
+  
+.VisionBody, .VisionBody1 {
+    flex: 1;
+    padding: 20px;
+}
+  
+.VisionBody i, .VisionBody1 i {
+    font-size: 2.5rem;
+    color: #ffffff; 
+}
+  
+.VisionBody h1, .VisionBody1 h1 {
+    font-size: 2rem;
+    margin: 10px 0;
     color: #ffffff;
-    padding-top: 15px;
-    padding-left: 320px;
-    width: 450px;
 }
-
-.aboutMid1 .VisionBody1 h1{
-    font-size: 55px;
-    padding-top: 15px;
+  
+.VisionBody h1 span, .VisionBody1 h1 span {
+    color: rgb(24, 228, 41); 
 }
-
-.aboutMid1 .VisionBody1 h1 span{
-    color: rgb(24, 228, 41);
+  
+.VisionBody p, .VisionBody1 p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #ffffff;
 }
-
-.aboutMid1 .VisionBody1 p{
-    font-size: 30px;
-    line-height: 2.3;
-    margin-left: -7%;
-    margin-right: 18%;
+  
+.aboutMid img, .aboutMid1 img {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .aboutPara p{
@@ -181,12 +144,18 @@
         font-size: 24px;
     }
 
-    .aboutMid .VisionBody h1, .aboutMid1 .VisionBody1 h1 {
-        font-size: 35px;
+    .aboutSec {
+        flex-direction: column;
+        align-items: center;
     }
-
-    .aboutMid .VisionBody p, .aboutMid1 .VisionBody1 p {
-        font-size: 20px;
+    
+    .aboutMid, .aboutMid1 {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .VisionBody, .VisionBody1 {
+        padding: 10px;
     }
 
     .aboutPara p {
