@@ -8,6 +8,7 @@ import { MdEmail } from "react-icons/md";
 import { auth } from '../../Firebase'
 import { sendPasswordResetEmail } from 'firebase/auth'
 import { toast } from 'react-toastify'
+import { Helmet } from 'react-helmet'
 
 const ForgotPassword = () => {
   const [email, setEmail] = useState("");
@@ -27,6 +28,9 @@ const ForgotPassword = () => {
 
   return (
     <div className='background'>
+      <Helmet>
+        <title>Reset | EcoBin</title>
+      </Helmet>
       <Navbar/>
       <BackToTop/>
       <div className="forgotPasswordContent">
