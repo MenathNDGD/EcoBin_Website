@@ -5,10 +5,14 @@ import Footer from '../Footer/Footer'
 import BackToTop from '../BackToTop/BackToTop'
 import VisionImg from '../../assets/vision.png'
 import MissionImg from '../../assets/mission.png'
+import { Helmet } from 'react-helmet'
 
 const AboutUs = () => {
   return (
     <div className='hero'>
+      <Helmet>
+        <title>About | EcoBin</title>
+      </Helmet>
       <Navbar/>
       <BackToTop/>
       <div className="aboutText">
@@ -20,7 +24,7 @@ const AboutUs = () => {
         <div className="aboutMid">
           <img src={VisionImg} alt="" />
           <div className="VisionBody">
-            <i class="fa-solid fa-eye-low-vision"></i>
+            <i class="fa-solid fa-binoculars"></i>
             <h1>Our <span>Vision</span></h1>
             <p>“To lead the transformation of waste management practices globally by providing innovative IoT-based solutions that optimize efficiency, reduce environmental impact, and empower communities towards a sustainable future.”</p>
           </div>
@@ -28,7 +32,7 @@ const AboutUs = () => {
 
         <div className="aboutMid1">
           <div className="VisionBody1">
-            <i class="fa-solid fa-bullseye"></i>
+            <i class="fa-solid fa-rocket"></i>
             <h1>Our <span>Mission</span></h1>
             <p>The EcoBin-Smart Garbage Management System utilizes IoT tech to automate sorting, monitor garbage levels in real time, provide notifications, and track locations, revolutionizing waste management for enhanced efficiency and sustainability.</p>
           </div>
