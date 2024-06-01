@@ -12,10 +12,14 @@ import Step06Img from '../../assets/Step06.png'
 import Step07Img from '../../assets/Step07.png'
 import Step08Img from '../../assets/Step08.png'
 import Step09Img from '../../assets/Step09.png'
+import { Helmet } from 'react-helmet'
 
 const HowToUse = () => {
   return (
     <div className='hero'>
+      <Helmet>
+        <title>Instructions | EcoBin</title>
+      </Helmet>
       <Navbar/>
       <BackToTop/>
       <div className="boxContent">
