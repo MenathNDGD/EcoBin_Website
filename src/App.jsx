@@ -11,7 +11,6 @@ import Profile from './Components/Profile/Profile'
 import ScrollToTop from './Components/ScrollToTop/ScrollToTop'
 import ForgotPassword from './Components/ForgotPassword/ForgotPassword'
 
-
 const App = () => {
   return (
     <div>
