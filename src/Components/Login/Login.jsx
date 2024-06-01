@@ -11,12 +11,14 @@ import { Link } from 'react-router-dom'
 import { signInWithEmailAndPassword } from 'firebase/auth'
 import { auth } from '../../Firebase'
 import { toast } from 'react-toastify'
+import { Helmet } from 'react-helmet'
 
 const Login = () => {
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
+  const [isPasswordInputActive, setIsPasswordInputActive] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -35,8 +37,16 @@ const Login = () => {
     setShowPassword(prevState => !prevState);
   };
 
+  const handlePasswordChange = (e) => {
+    setPassword(e.target.value);
+    setIsPasswordInputActive(e.target.value.length > 0);
+  };
+
   return (
     <div className='background'>
+      <Helmet>
+        <title>Login | EcoBin</title>
+      </Helmet>
       <Navbar/>
       <BackToTop/>
       <div className="loginContent">
@@ -54,21 +64,23 @@ const Login = () => {
                 onChange={(e) => setEmail(e.target.value)} 
                 required
               />
-              <MdEmail  className='icon'/>
+              <MdEmail className='icon'/>
             </div>
             <div className="inputBox">
               <input 
                 type={showPassword ? 'text' : 'password'}
                 placeholder='Password'
                 value={password}
-                onChange={(e) => setPassword(e.target.value)} 
+                onChange={handlePasswordChange} 
                 required
               />
               <FaLock className='icon'/>
-              {showPassword ? (
-                <FaEyeSlash className='togglePasswordIcon' onClick={togglePasswordVisibility} />
-              ) : (
-                <FaEye className='togglePasswordIcon' onClick={togglePasswordVisibility} />
+              {isPasswordInputActive && (
+                showPassword ? (
+                  <FaEyeSlash className='togglePasswordIcon' onClick={togglePasswordVisibility} />
+                ) : (
+                  <FaEye className='togglePasswordIcon' onClick={togglePasswordVisibility} />
+                )
               )}
             </div>
             <div className="rememberForgot">
