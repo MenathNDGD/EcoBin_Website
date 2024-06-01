@@ -7,6 +7,7 @@ import Navbar from '../Navbar/Navbar'
 import Footer from '../Footer/Footer'
 import { Link } from 'react-router-dom'
 import BackToTop from '../BackToTop/BackToTop'
+import { Helmet } from 'react-helmet'
 
 const Home = () => {
 
@@ -31,6 +32,9 @@ const Home = () => {
   
   return (
     <div className='hero'>
+      <Helmet>
+        <title>Welcome | EcoBin</title>
+      </Helmet>
       <Navbar/>
       <BackToTop/>
       <div className="hero-text">
@@ -50,8 +54,8 @@ const Home = () => {
 
       <div className="hero-mid">
         <h1>Welcome to <span>ECOBIN</span></h1>
-        <img src={MidPic} alt="" />
       </div>
+      <img src={MidPic} alt="" className='hero-mid-pic'/>
 
       <div className="achive">
         <h1>Our <span>Achievements</span></h1>
@@ -87,7 +91,7 @@ const Home = () => {
           <button className='btn2'><Link to="/user-login">JOIN US</Link></button>
         </div>
         <div className="volImg">
-          <img src={JoinUsPic} alt="" />
+          <img src={JoinUsPic} alt="" className='join-us-pic'/>
         </div>
       </div>
       

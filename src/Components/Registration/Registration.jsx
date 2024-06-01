@@ -13,16 +13,18 @@ import { createUserWithEmailAndPassword } from 'firebase/auth'
 import { auth, db } from '../../Firebase'
 import { doc, setDoc } from 'firebase/firestore'
 import { toast } from 'react-toastify'
+import { Helmet } from 'react-helmet'
 
 const Registration = () => {
 
-  const [Username, setUsername] = useState("");
+  const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [contactNumber, setContactNumber] = useState("");
   const [address, setAddress] = useState("");
   const [city, setCity] = useState("");
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
+  const [isPasswordInputActive, setIsPasswordInputActive] = useState(false);
 
   const handleRegister = async (e) => {
     e.preventDefault();
@@ -33,7 +35,7 @@ const Registration = () => {
       if (user) {
         await setDoc(doc(db, "Users", user.uid), {
           email: user.email,
-          username: Username,
+          username: username,
           contactNumber: contactNumber,
           address: address,
           city: city,
@@ -52,8 +54,16 @@ const Registration = () => {
     setShowPassword(prevState => !prevState);
   };
 
+  const handlePasswordChange = (e) => {
+    setPassword(e.target.value);
+    setIsPasswordInputActive(e.target.value.length > 0);
+  };
+
   return (
     <div className='bgReg'>
+      <Helmet>
+        <title>Become a Member | EcoBin</title>
+      </Helmet>
       <Navbar />
       <BackToTop />
       <div className="regContent">
@@ -112,14 +122,16 @@ const Registration = () => {
               <input
                 type={showPassword ? 'text' : 'password'}
                 placeholder='Password'
-                onChange={(e) => setPassword(e.target.value)}
+                onChange={handlePasswordChange}
                 required
               />
               <FaLock className='icon' />
-              {showPassword ? (
-                <FaEyeSlash className='togglePasswordIcon' onClick={togglePasswordVisibility} />
-              ) : (
-                <FaEye className='togglePasswordIcon' onClick={togglePasswordVisibility} />
+              {isPasswordInputActive && (
+                showPassword ? (
+                  <FaEyeSlash className='togglePasswordIcon' onClick={togglePasswordVisibility} />
+                ) : (
+                  <FaEye className='togglePasswordIcon' onClick={togglePasswordVisibility} />
+                )
               )}
             </div>
             <div className="agree">

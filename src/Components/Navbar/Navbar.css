@@ -23,6 +23,14 @@ nav{
     width: 120px;
 }
 
+.logo-link{
+    cursor: pointer;
+}
+
+.logo-link:hover{
+    transform: scale(1.2);
+}
+
 nav ul li{
     display: inline-block;
     list-style: none;
@@ -46,8 +54,9 @@ nav ul li{
 }
 
 .darkNav{
-    background: #777777;
-    transition: 0.5s;
+    background: linear-gradient(135deg, rgba(63, 62, 62, 0.7), rgba(63, 62, 62, 0.7));
+    backdrop-filter: blur(30px);
+    transition: background 0.5s, backdrop-filter 0.5s;
 }
 
 nav ul li a:not(.active):hover{
@@ -56,6 +65,7 @@ nav ul li a:not(.active):hover{
 
 .navBtn:hover{
     transform: scale(1.1);
+    color: #ffffff;
 }
 
 .menuIcon{
@@ -82,7 +92,9 @@ nav ul li a:not(.active):hover{
         top: 0;
         right: 0;
         bottom: 0;
-        background: #777777;
+        background: linear-gradient(135deg, rgba(63, 62, 62, 0.7), rgba(63, 62, 62, 0.7));
+        backdrop-filter: blur(30px);
+        transition: background 0.5s, backdrop-filter 0.5s;
         z-index: -1;
         width: 230px;
         padding-top: 70px;
@@ -96,8 +108,9 @@ nav ul li a:not(.active):hover{
 
     .menuIcon{
         display: block;
-        width: 55px;
+        width: 75px;
         cursor: pointer;
+        padding-right: 3%;
     }
 
     .hideMenuIcon{
