@@ -1,54 +1,39 @@
 .backToTop button{
-    position: fixed;
-    bottom: 50px;
-    right: 50px;
-    height: 50px;
-    width: 50px;
-    font-size: 50px;
-    color: rgb(24, 228, 41);
-    background: rgb(0, 0, 0);
-    cursor: pointer;
-    border: none;
-    border-radius: 50%;
-    border-style: none;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  height: 50px;
+  width: 50px;
+  font-size: 50px;
+  color: rgb(24, 228, 41);
+  background: rgb(0, 0, 0);
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  border-style: none;
 }
 
-@media (max-width: 1200px) {
-    .backToTop button {
-        bottom: 40px;
-        right: 40px;
-        height: 45px;
-        width: 45px;
-        font-size: 28px;
-    }
-}
-
-@media (max-width: 992px) {
-    .backToTop button {
-        bottom: 30px;
-        right: 30px;
-        height: 40px;
-        width: 40px;
-        font-size: 25px;
-    }
+.backToTop button:hover {
+  background: rgb(24, 228, 41);
+  color: rgb(0, 0, 0);
 }
 
 @media (max-width: 768px) {
-    .backToTop button {
-        bottom: 20px;
-        right: 20px;
-        height: 35px;
-        width: 35px;
-        font-size: 22px;
-    }
+  .backToTop button {
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    bottom: 30px;
+    right: 30px;
+  }
 }
-
-@media (max-width: 576px) {
-    .backToTop button {
-        bottom: 15px;
-        right: 15px;
-        height: 30px;
-        width: 30px;
-        font-size: 20px;
-    }
+  
+@media (max-width: 480px) {
+  .backToTop button {
+    height: 36px;
+    width: 36px;
+    font-size: 18px;
+    bottom: 20px;
+    right: 20px;
+  }
 }
