@@ -20,7 +20,9 @@ const Navbar = () => {
 
   return (
     <nav className={`container ${sticky? 'darkNav' : ''}`}>
-      <img src = {logo} alt = "" className='logo'/>
+      <NavLink to="/" className="logo-link">
+        <img src = {logo} alt = "" className='logo'/>
+      </NavLink>
       <ul className={hideMenu ? '' : 'hideMenuIcon'}>
         <li><NavLink to="/">Home</NavLink></li>
         <li><NavLink to="/how-to-use">How to Use</NavLink></li>
