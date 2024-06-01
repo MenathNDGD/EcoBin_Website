@@ -8,6 +8,7 @@ import { auth, db, storage } from '../../Firebase';
 import { doc, getDoc, updateDoc } from 'firebase/firestore';
 import { getDownloadURL, ref, uploadBytes } from 'firebase/storage';
 import { toast } from 'react-toastify';
+import { Helmet } from 'react-helmet';
 
 const Profile = () => {
   const [userDetails, setUserDetails] = useState(null);
@@ -127,6 +128,9 @@ const Profile = () => {
 
   return (
     <div className='hero'>
+      <Helmet>
+        <title>My Profile | EcoBin</title>
+      </Helmet>
       <Navbar />
       <BackToTop />
       {loading ? (
