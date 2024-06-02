@@ -91,93 +91,47 @@
 }
 
 @media (max-width: 1200px) {
-    .regContent {
-        flex-direction: column;
-        padding: 5% 10%;
+    .regForm {
+        width: 80%;
     }
 
     .regContent .regImg img {
-        width: 70%;
-        margin-left: 0;
-    }
-
-    .regForm {
         width: 100%;
-        padding: 20px 30px;
-        margin-right: 0;
+        margin-left: 0;
     }
 }
 
 @media (max-width: 992px) {
-    .regForm h1 {
-        font-size: 35px;
+    .bgReg {
+        min-height: 150vh;
     }
 
-    .inputBox input {
-        font-size: 16px;
+    .regForm {
+        width: 90%;
+        margin-right: 0;
     }
 
-    .regForm button {
-        width: 50%;
-        font-size: 20px;
-    }
-
-    .regForm .loginLink p {
-        font-size: 16px;
+    .regContent {
+        padding-left: 0;
     }
 }
 
 @media (max-width: 768px) {
-    .regForm h1 {
-        font-size: 30px;
+    .bgReg {
+        min-height: 200vh;
     }
 
-    .inputBox input {
-        font-size: 14px;
-    }
-
-    .regForm button {
-        width: 60%;
-        font-size: 18px;
-    }
-
-    .regForm .loginLink p {
-        font-size: 14px;
+    .regForm {
+        width: 95%;
     }
 }
 
 @media (max-width: 576px) {
     .bgReg {
-        padding: 5%;
-    }
-
-    .regContent {
-        padding: 5% 5%;
-    }
-
-    .regContent .regImg img {
-        width: 50%;
-        margin-bottom: 20px;
+        min-height: 250vh;
     }
 
     .regForm {
-        padding: 15px 20px;
-    }
-
-    .regForm h1 {
-        font-size: 25px;
-    }
-
-    .inputBox input {
-        font-size: 12px;
-    }
-
-    .regForm button {
-        width: 70%;
-        font-size: 16px;
-    }
-
-    .regForm .loginLink p {
-        font-size: 12px;
+        width: 100%;
     }
 }

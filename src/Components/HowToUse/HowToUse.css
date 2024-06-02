@@ -77,92 +77,65 @@
 }
 
 @media (max-width: 1200px) {
-    .useBox, .useBox2, .useBox3 {
-        padding-left: 15%;
-        padding-right: 15%;
+    .boxContent {
+        padding-left: 12%;
+        padding-right: 12%;
     }
 }
 
 @media (max-width: 992px) {
-    .useBox, .useBox2, .useBox3 {
-        flex-direction: column;
+    .boxContent {
         padding-left: 10%;
         padding-right: 10%;
-    }
-
-    .contentBox, .stepBox {
-        width: 100%;
-        margin: 15px 0;
-    }
-
-    .contentBox {
-        width: 100%;
-    }
-
-    .stepBox {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .stepBox .boxImg img {
-        width: 50%;
-    }
-
-    .stepBox .boxHead h1 {
-        font-size: 35px;
     }
 }
 
 @media (max-width: 768px) {
-    .useBox, .useBox2, .useBox3 {
-        padding-left: 5%;
-        padding-right: 5%;
+    .boxContent {
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+
+    .useBox {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .useBox .contentBox {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .useBox .stepBox {
+        flex: 1 1 100%;
+        margin-bottom: 20px;
+    }
+
+    .stepBox .boxHead h1 {
+        font-size: 30px;
+        padding: 10px 20px;
+    }
+
+    .contentBox h3 {
+        font-size: 24px;
+    }
+
+    .contentBox ul li {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 576px) {
+    .useBox .stepBox .boxHead h1 {
+        font-size: 24px;
     }
 
     .contentBox h3 {
         font-size: 20px;
     }
 
-    .contentBox li {
-        font-size: 18px;
-    }
-
-    .stepBox .boxHead h1 {
-        font-size: 30px;
-    }
-}
-
-@media (max-width: 576px) {
-    .hero {
-        min-height: 200vh;
-    }
-
-    .useBox, .useBox2, .useBox3 {
-        padding-left: 2%;
-        padding-right: 2%;
-    }
-
-    .contentBox {
-        padding: 10px 15px;
-    }
-
-    .contentBox h3 {
-        font-size: 18px;
-    }
-
-    .contentBox li {
+    .contentBox ul li {
         font-size: 16px;
-    }
-
-    .stepBox {
-        padding: 10px 15px;
-    }
-
-    .stepBox .boxHead h1 {
-        font-size: 25px;
-    }
-
-    .stepBox .boxImg img {
-        width: 60%;
     }
 }

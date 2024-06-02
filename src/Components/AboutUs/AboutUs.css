@@ -1,4 +1,4 @@
-.hero{
+.hero {
     width: 100%;
     max-height: fit-content;
     background: linear-gradient(rgba(22, 22, 22, 0.5), rgba(22, 22, 22, 0.5)), url('../../assets/home_bg.png');
@@ -7,14 +7,14 @@
     color: #fff;
 }
 
-.hero .aboutText h1{
+.hero .aboutText h1 {
     text-align: center;
     padding-top: 9%;
     justify-content: center;
     font-size: 80px;
 }
 
-.hero .aboutText p{
+.hero .aboutText p {
     font-size: 35px;
     line-height: 2.5;
     padding-top: 15px;
@@ -79,7 +79,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.aboutPara p{
+.aboutPara p {
     font-size: 35px;
     line-height: 2.5;
 }

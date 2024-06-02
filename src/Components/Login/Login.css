@@ -140,27 +140,70 @@
     color: rgb(24, 228, 41);
 }
 
+.Toastify__toast--success {
+    background-color: #4CAF50;
+    color: white;
+}
+  
+.Toastify__toast--error {
+    background-color: #f44336;
+    color: white;
+}
+  
+.toast-success {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+  
+.toast-error {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
 @media (max-width: 1200px) {
-    .loginContent {
-        flex-direction: column;
-        padding: 5% 10%;
-    }
-
-    .loginContent .loginImg img {
-        width: 60%;
-        margin-left: 0;
-    }
-
     .loginForm {
-        margin-right: 0;
-        width: 100%;
-        padding: 20px 30px;
+        width: 420px;
     }
 }
 
 @media (max-width: 992px) {
+    .loginForm {
+        width: 380px;
+        margin-right: 10%;
+    }
+
+    .loginContent .loginImg img {
+        width: 60%;
+        margin-left: 20%;
+    }
+}
+
+@media (max-width: 768px) {
+    .background {
+        background-size: auto;
+    }
+
+    .loginContent {
+        padding-top: 15%;
+        margin-bottom: 5%;
+    }
+
+    .loginContent .loginImg img {
+        width: 50%;
+        margin-left: 10%;
+    }
+
+    .loginForm {
+        width: 90%;
+        max-width: 400px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
     .loginForm h1 {
-        font-size: 35px;
+        font-size: 36px;
     }
 
     .inputBox input {
@@ -177,9 +220,25 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 576px) {
+    .loginContent {
+        padding-top: 20%;
+        margin-bottom: 3%;
+    }
+
+    .loginContent .loginImg img {
+        width: 70%;
+        margin-left: 0;
+    }
+
+    .loginForm {
+        padding: 20px;
+        width: 90%;
+        max-width: 320px;
+    }
+
     .loginForm h1 {
-        font-size: 30px;
+        font-size: 32px;
     }
 
     .inputBox input {
@@ -193,41 +252,5 @@
 
     .loginForm .regLink p {
         font-size: 14px;
-    }
-}
-
-@media (max-width: 576px) {
-    .background {
-        padding: 5%;
-    }
-
-    .loginContent {
-        padding: 5% 5%;
-    }
-
-    .loginContent .loginImg img {
-        width: 50%;
-        margin-bottom: 20px;
-    }
-
-    .loginForm {
-        padding: 15px 20px;
-    }
-
-    .loginForm h1 {
-        font-size: 25px;
-    }
-
-    .inputBox input {
-        font-size: 12px;
-    }
-
-    .loginForm button {
-        width: 70%;
-        font-size: 16px;
-    }
-
-    .loginForm .regLink p {
-        font-size: 12px;
     }
 }

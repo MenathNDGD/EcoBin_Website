@@ -1,20 +1,19 @@
-import React, { useState } from 'react'
-import Navbar from '../Navbar/Navbar'
-import Footer from '../Footer/Footer'
-import BackToTop from '../BackToTop/BackToTop'
-import './Login.css'
-import LoginImg from '../../assets/loginImg.png'
+import React, { useState } from 'react';
+import Navbar from '../Navbar/Navbar';
+import Footer from '../Footer/Footer';
+import BackToTop from '../BackToTop/BackToTop';
+import './Login.css';
+import LoginImg from '../../assets/loginImg.png';
 import { MdEmail } from "react-icons/md";
-import { FaLock } from "react-icons/fa";
-import { FaEye, FaEyeSlash } from "react-icons/fa";
-import { Link } from 'react-router-dom'
-import { signInWithEmailAndPassword } from 'firebase/auth'
-import { auth } from '../../Firebase'
-import { toast } from 'react-toastify'
-import { Helmet } from 'react-helmet'
+import { FaLock, FaEye, FaEyeSlash } from "react-icons/fa";
+import { Link } from 'react-router-dom';
+import { signInWithEmailAndPassword } from 'firebase/auth';
+import { auth } from '../../Firebase';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { Helmet } from 'react-helmet';
 
 const Login = () => {
-
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
@@ -26,10 +25,43 @@ const Login = () => {
       await signInWithEmailAndPassword(auth, email, password);
       console.log("User Logged In Successfully!");
       window.location.href = "/user-profile";
-      toast.success("User Logged In Successfully!", { position: "top-center", });
+      toast.success(<div>User Logged In Successfully!</div>, { 
+        position: "top-center", 
+        autoClose: 3000,
+        className: 'toast-success'
+      });
     } catch (error) {
-      console.log(error.message);
-      toast.error(error.message, { position: "top-center", });
+      console.error("Login Error:", error);
+      let errorMessage = "";
+      if (error.code) {
+        switch (error.code) {
+          case "auth/user-not-found":
+            errorMessage = "User Not Found! Please Contact Support.";
+            break;
+          case "auth/wrong-password":
+            errorMessage = "Wrong Password! Please Try Again.";
+            break;
+          case "auth/invalid-email":
+            errorMessage = "Invalid Email Address Format!";
+            break;
+          case "auth/user-disabled":
+            errorMessage = "Account Has Been Disabled! Please Contact Support.";
+            break;
+          case "auth/invalid-credential":
+            errorMessage = "Invalid Credentials! Please Try Again.";
+            break;
+          default:
+            errorMessage = "Login Failed! Please Try Again Later.";
+            break;
+        }
+      } else {
+        errorMessage = "Login failed. Please try again later.";
+      }
+      toast.error(<div>{errorMessage}</div>, { 
+        position: "top-center", 
+        autoClose: 5000,
+        className: 'toast-error'
+      });
     }
   };
 
@@ -95,8 +127,9 @@ const Login = () => {
         </div>
       </div>
       <Footer/>
+      <ToastContainer />
     </div>
-  )
-}
+  );
+};
 
-export default Login
+export default Login;
