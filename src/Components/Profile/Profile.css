@@ -153,27 +153,64 @@ button[type="button"] {
     color: rgba(24, 228, 41, 0.822);
 }
   
+@media (max-width: 1200px) {
+    .profileInfo p input {
+        width: 40%;
+    }
+}
+
+@media (max-width: 992px) {
+    .profileInfo p input {
+        width: 50%;
+    }
+}
+
 @media (max-width: 768px) {
-    .profileContent {
-        padding: 20px;
+    .hero {
+        min-height: 150vh;
     }
 
     .profileContent h1 {
-        font-size: 2rem;
+        padding-top: 10%;
+        font-size: 36px;
+    }
+
+    .profileInfo p input {
+        width: 60%;
     }
 
     .fields .userAvatar {
-        width: 120px;
-        height: 120px;
-    }
-
-    .profileContent .profileInfo p {
-        font-size: 1rem;
+        width: 180px;
+        height: 180px;
     }
 
     .profileContent button {
+        width: 50%;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero {
+        min-height: 200vh;
+    }
+
+    .profileContent h1 {
+        padding-top: 15%;
+        font-size: 32px;
+    }
+
+    .profileInfo p input {
         width: 70%;
-        padding: 12px;
-        font-size: 1rem;
+    }
+
+    .fields .userAvatar {
+        width: 150px;
+        height: 150px;
+    }
+
+    .profileContent button {
+        width: 60%;
+        font-size: 16px;
     }
 }
