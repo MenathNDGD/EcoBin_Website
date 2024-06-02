@@ -63,23 +63,23 @@ const Home = () => {
         <div className="wrapper">
           <div className="contain">
             <i class="fa-solid fa-users"></i>
-            <span class="num" data-val="400">000</span>
-            <span class="text">Registered Users</span>
+            <span className="num" data-val="400">000</span>
+            <span className="text">Registered Users</span>
           </div>
           <div className="contain">
             <i class="fa-solid fa-users-between-lines"></i>
-            <span class="num" data-val="340">000</span>
-            <span class="text">Active Users</span>
+            <span className="num" data-val="340">000</span>
+            <span className="text">Active Users</span>
           </div>
           <div className="contain">
             <i class="fa-solid fa-cart-shopping"></i>
-            <span class="num" data-val="225">000</span>
-            <span class="text">Sold Products</span>
+            <span className="num" data-val="225">000</span>
+            <span className="text">Sold Products</span>
           </div>
           <div className="contain">
             <i class="fa-solid fa-star"></i>
-            <span class="num" data-val="280">000</span>
-            <span class="text">Five Stars</span>
+            <span className="num" data-val="280">000</span>
+            <span className="text">Five Stars</span>
           </div>
         </div>
       </div>
