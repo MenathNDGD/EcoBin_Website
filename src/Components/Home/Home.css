@@ -259,6 +259,10 @@ i {
     .achive {
         font-size: 28px;
     }
+    .achive .wrapper {
+        max-width: 1000px;
+        padding-top: 20%;
+    }
     .achive .wrapper .contain span.num {
         font-size: 3em;
     }
@@ -267,6 +271,7 @@ i {
     }
     .volunteer {
         font-size: 28px;
+        padding-top: 25%;
     }
     .volText h1 {
         font-size: 1.8em;
@@ -305,6 +310,10 @@ i {
     .achive {
         font-size: 25px;
     }
+    .achive .wrapper {
+        max-width: 900px;
+        padding-top: 25%;
+    }
     .achive .wrapper .contain span.num {
         font-size: 2.5em;
     }
@@ -313,6 +322,7 @@ i {
     }
     .volunteer {
         font-size: 25px;
+        padding-top: 29%;
     }
     .volText h1 {
         font-size: 1.6em;
@@ -367,18 +377,21 @@ i {
         padding-right: 5%;
     }
     .achive .wrapper {
-        flex-direction: column;
-        gap: 20px;
+        max-width: 800px;
     }
     .achive .wrapper .contain {
         width: 90%;
         height: auto;
+        font-size: 15px;
+    }
+    .achive .wrapper .contain i{
+        font-size: 30px;
     }
     .achive .wrapper .contain span.num {
-        font-size: 2.2em;
+        font-size: 20px;
     }
     .achive .wrapper .contain span.text {
-        font-size: 1.2em;
+        font-size: 20px;
     }
     .volunteer {
         flex-direction: column;
