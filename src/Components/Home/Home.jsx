@@ -57,7 +57,7 @@ const Home = () => {
       </div>
       <img src={MidPic} alt="" className='hero-mid-pic'/>
 
-      <div className="achive">
+      <div className="achieve">
         <h1>Our <span>Achievements</span></h1>
         <p>Our organization is one of the IoT-based smart garbage management systems, revolutionizing waste sorting and real-time monitoring.</p>
         <div className="wrapper">
@@ -86,7 +86,7 @@ const Home = () => {
 
       <div className="volunteer">
         <div className="volText">
-          <h1>Become an awsome <span>Volunteer</span></h1>
+          <h1>Become an awesome <span>Volunteer</span></h1>
           <p>Join us in revolutionizing waste management practices with our innovative EcoBin-Smart Garbage Management System, which optimizes routes, reduces operational costs, and empowers efficient waste disposal through real-time monitoring and automated sorting technologies.</p>
           <button className='btn2'><Link to="/user-login">JOIN US</Link></button>
         </div>

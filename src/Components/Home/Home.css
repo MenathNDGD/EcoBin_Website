@@ -76,7 +76,7 @@
     background: linear-gradient(rgba(22, 22, 22, 0.5), rgba(22, 22, 22, 0.5));
 }
 
-.achive {
+.achieve {
     text-align: center;
     font-size: 30px;
     padding-top: 4%;
@@ -84,21 +84,21 @@
     padding-right: 10%;
 }
 
-.achive h1 {
+.achieve h1 {
     text-transform: uppercase;
 }
 
-.achive span {
+.achieve span {
     color: rgb(24, 228, 41);
 }
 
-.achive p {
+.achieve p {
     text-align: center;
     font-size: 25px;
     margin: 10px auto 20px;
 }
 
-.achive .wrapper {
+.achieve .wrapper {
     position: absolute;
     width: 80vw;
     transform: translate(-50%, -50%);
@@ -110,7 +110,7 @@
     padding-top: 15%;
 }
 
-.achive .contain {
+.achieve .contain {
     width: 28vmin;
     height: 28vmin;
     display: flex;
@@ -130,7 +130,7 @@ i {
     text-align: center;
 }
 
-.achive .wrapper .contain span.num {
+.achieve .wrapper .contain span.num {
     color: #ffffff;
     display: grid;
     place-items: center;
@@ -138,7 +138,7 @@ i {
     font-size: 3.5em;
 }
 
-.achive .wrapper .contain span.text {
+.achieve .wrapper .contain span.text {
     color: #e0e0e0;
     font-size: 1.9em;
     text-align: center;
@@ -245,236 +245,812 @@ i {
     transform: scale(1.1);
 }
 
-
 @media (max-width: 1200px) {
-    .text-head h1 {
-        font-size: 50px;
+    .hero-text {
+        text-align: center;
+        align-items: center;
     }
+
+    .text-head {
+        padding-right: 20px;
+    }
+
+    .text-head2 {
+        text-align: left;
+    }
+
+    .text-head2 h1 {
+        font-size: 32px;
+    }
+
     .hero p {
-        font-size: 22px;
+        font-size: 28px;
     }
+
     .hero-mid {
-        font-size: 28px;
+        text-align: center;
     }
-    .achive {
-        font-size: 28px;
-    }
-    .achive .wrapper {
+
+    .hero-mid-pic {
+        width: 100%;
         max-width: 1000px;
+        margin-top: 20px;
+    }
+
+    .achieve {
+        text-align: center;
+    }
+
+    .achieve .wrapper {
+        width: 90%;
         padding-top: 20%;
     }
-    .achive .wrapper .contain span.num {
-        font-size: 3em;
+
+    .achieve .wrapper .contain {
+        width: 45%;
+        font-size: 14px;
     }
-    .achive .wrapper .contain span.text {
-        font-size: 1.7em;
+
+    .achieve .wrapper .contain i {
+        font-size: 3.5em;
+        padding-bottom: 10px;
     }
+
+    .achieve .wrapper .contain span.num {
+        font-size: 2.5em;
+        padding-bottom: 10px;
+    }
+
+    .achieve .wrapper .contain span.text {
+        font-size: 1.8em;
+        padding-bottom: 10px;
+    }
+
     .volunteer {
-        font-size: 28px;
-        padding-top: 25%;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 23%;
     }
+
+    .volText {
+        padding-top: 2%;
+        margin-right: 0;
+        text-align: center;
+    }
+
     .volText h1 {
         font-size: 1.8em;
     }
+
+    .volImg {
+        width: 80%;
+    }
+
     .volText p {
-        font-size: 22px;
+        font-size: 20px;
     }
-    .download {
-        height: 20em;
-    }
-    .download .scanImg img {
-        width: 22em;
-        padding-right: 60px;
-    }
-    .download .scanText h1 {
-        font-size: 1.8em;
-    }
-    .download .scanText ol li {
-        font-size: 22px;
-    }
-    .download .scanText button {
+
+    .volunteer .volText button {
         font-size: 18px;
+    }
+
+    .volunteer .volText button:hover {
+        transform: none;
+    }
+
+    .download {
+        height: auto;
+        flex-direction: column;
+        text-align: center;
+        padding: 5%;
+    }
+
+    .download .scanImg img {
+        width: 100%;
+        max-width: 800px;
+        padding-right: 0;
+    }
+
+    .download .scanText {
+        margin-left: 0;
+        margin-top: 5%;
+    }
+
+    .download .scanText h1 {
+        margin-left: 0;
+    }
+
+    .download .scanText ol li {
+        font-size: 20px;
+        line-height: 1.5;
+        text-align: left;
+        margin-top: 10px;
+    }
+
+    .download .scanText button {
+        margin-top: 20px;
+        font-size: 18px;
+    }
+
+    .download .scanText button:hover {
+        transform: none;
     }
 }
 
 @media (max-width: 992px) {
-    .text-head h1 {
-        font-size: 40px;
+    .hero-text {
+        padding: 100px 20px 20px 20px;
+        text-align: center;
+        align-items: center;
     }
+
+    .text-head {
+        padding-right: 0;
+        text-align: center;
+        padding: 0 5%;
+    }
+
+    .text-head h1 {
+        font-size: 50px;
+    }
+
+    .text-head2 {
+        text-align: left;
+    }
+
+    .text-head2 h1 {
+        font-size: 30px;
+    }
+
     .hero p {
         font-size: 20px;
     }
+
     .hero-mid {
-        font-size: 25px;
+        padding: 50px 20px;
+        text-align: center;
     }
-    .achive {
-        font-size: 25px;
+
+    .hero-mid-pic {
+        width: 90%;
+        margin-top: 20px;
     }
-    .achive .wrapper {
-        max-width: 900px;
-        padding-top: 25%;
+
+    .achieve {
+        font-size: 24px;
+        padding-top: 3%;
     }
-    .achive .wrapper .contain span.num {
+
+    .achieve .wrapper {
+        width: 90vw;
+        padding-top: 30%;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .achieve .wrapper .contain {
+        width: 45%;
+        height: 30vw;
+        max-width: 200px;
+        padding: 20px;
+        border-bottom: 8px solid #00c51ada;
+    }
+
+    .achieve .wrapper .contain span.num {
         font-size: 2.5em;
     }
-    .achive .wrapper .contain span.text {
-        font-size: 1.5em;
+
+    .achieve .wrapper .contain span.text {
+        font-size: 1.2em;
     }
+
     .volunteer {
-        font-size: 25px;
-        padding-top: 29%;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        font-size: 24px;
+        padding: 20px;
+        padding-top: 35%;
     }
-    .volText h1 {
-        font-size: 1.6em;
+
+    .volText {
+        padding-top: 2%;
+        margin-right: 0;
     }
+
+    .volunteer .volText h1 {
+        font-size: 2em;
+    }
+
+    .join-us-pic {
+        margin-top: 20px;
+        width: 100%;
+        max-width: 800px;
+    }
+
     .volText p {
-        font-size: 20px;
+        font-size: 25px;
     }
+
     .download {
-        height: 18em;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 10%;
+        margin-right: 10%;
+        height: auto;
+        padding: 20px;
     }
+
     .download .scanImg img {
-        width: 20em;
-        padding-right: 40px;
+        width: 100%;
+        max-width: 300px;
+        padding-right: 0;
     }
+
+    .download .scanText {
+        margin-left: 0;
+        text-align: center;
+        margin-top: 20px;
+    }
+
     .download .scanText h1 {
-        font-size: 1.6em;
+        margin-left: 0;
     }
+
+    .download .scanText ol {
+        margin-top: 10px;
+    }
+
     .download .scanText ol li {
         font-size: 20px;
+        line-height: 1.5;
     }
+
     .download .scanText button {
-        font-size: 16px;
+        margin-top: 20px;
+        font-size: 18px;
+    }
+
+    .download .scanText button:hover {
+        transform: scale(1.1);
     }
 }
 
 @media (max-width: 768px) {
     .hero-text {
-        flex-direction: column;
-        padding: 100px 5% 20px;
+        align-items: center;
+        padding: 80px 10%;
+        padding-top: 15%;
+        padding-bottom: 0;
     }
-    .text-head h1 {
-        font-size: 35px;
-        text-align: center;
+
+    .text-head {
         padding-right: 0;
+        text-align: center;
     }
+
+    .text-head h1 {
+        font-size: 48px;
+    }
+
+    .text-head2 {
+        text-align: left;
+        padding: 20px 20px;
+    }
+
+    .text-head2 h1 {
+        font-size: 32px;
+    }
+
     .hero p {
-        font-size: 18px;
+        font-size: 20px;
         padding-left: 5%;
         padding-right: 5%;
     }
+
     .hero-mid {
-        font-size: 22px;
-        padding-left: 5%;
-        padding-right: 5%;
+        font-size: 24px;
+        padding: 20px 10%;
     }
+
     .hero-mid-pic {
-        width: 85%;
-    }
-    .achive {
-        font-size: 22px;
-        padding-left: 5%;
-        padding-right: 5%;
-    }
-    .achive .wrapper {
-        max-width: 800px;
-    }
-    .achive .wrapper .contain {
         width: 90%;
+        margin-top: 20px;
+    }
+
+    .achieve {
+        font-size: 24px;
+        padding-top: 3%;
+    }
+
+    .achieve .wrapper {
+        width: 90%;
+        padding-top: 50%;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .achieve .wrapper .contain {
+        width: 45%;
         height: auto;
-        font-size: 15px;
     }
-    .achive .wrapper .contain i{
-        font-size: 30px;
+
+    .achieve .wrapper .contain i {
+        font-size: 3em;
     }
-    .achive .wrapper .contain span.num {
-        font-size: 20px;
+
+    .achieve .wrapper .contain span.num {
+        font-size: 2.5em;
     }
-    .achive .wrapper .contain span.text {
-        font-size: 20px;
+
+    .achieve .wrapper .contain span.text {
+        font-size: 1.5em;
+        line-height: 1.2;
     }
+
     .volunteer {
         flex-direction: column;
-        padding-left: 5%;
-        padding-right: 5%;
+        text-align: center;
+        padding-top: 55%;
     }
+
     .volText {
         margin-right: 0;
-        margin-bottom: 20px;
     }
-    .volText h1 {
-        font-size: 1.4em;
+
+    .volunteer .volText h1 {
+        font-size: 1.5em;
     }
-    .volText p {
-        font-size: 18px;
+
+    .volunteer .volText p {
+        font-size: 20px;
+        margin-bottom: 10px;
     }
+
+    .volImg {
+        margin-top: 20px;
+    }
+
     .download {
         flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 3% auto;
+        padding: 5%;
         height: auto;
-        margin-left: 10%;
-        margin-right: 10%;
+        width: 80%;
     }
+
+    .download .scanImg {
+        margin-bottom: 30px;
+    }
+
     .download .scanImg img {
-        width: 100%;
+        width: 70%;
         padding-right: 0;
     }
+
     .download .scanText {
         margin-left: 0;
-        text-align: center;
     }
+
     .download .scanText h1 {
-        font-size: 1.4em;
+        margin-left: 0;
     }
+
+    .download .scanText ol {
+        margin-top: 3%;
+    }
+
     .download .scanText ol li {
-        font-size: 18px;
+        font-size: 20px;
+        line-height: 1.5;
+        text-align: left;
     }
+
     .download .scanText button {
-        font-size: 16px;
+        margin-top: 20px;
+        font-size: 18px;
     }
 }
 
 @media (max-width: 576px) {
+    .hero {
+        min-height: 100vh;
+    }
+
+    .hero-text {
+        padding: 100px 10% 20px 10%;
+    }
+
     .text-head h1 {
-        font-size: 28px;
+        font-size: 36px; 
     }
-    .hero p {
-        font-size: 16px;
+
+    .text-head2 h1 {
+        font-size: 24px;
     }
-    .hero-mid {
-        font-size: 20px;
-    }
-    .achive {
-        font-size: 20px;
-    }
-    .achive .wrapper .contain span.num {
-        font-size: 2em;
-    }
-    .achive .wrapper .contain span.text {
-        font-size: 1em;
-    }
-    .volunteer {
-        font-size: 20px;
-    }
-    .volText h1 {
-        font-size: 1.2em;
-    }
-    .volText p {
-        font-size: 16px;
-    }
-    .download {
-        height: auto;
-    }
-    .download .scanImg img {
-        width: 100%;
+
+    .text-head {
         padding-right: 0;
     }
-    .download .scanText h1 {
-        font-size: 1.2em;
+
+    .text-head2 {
+        text-align: center;
     }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .hero-mid {
+        font-size: 24px;
+        padding: 20px 5%;
+    }
+
+    .hero-mid h1 {
+        font-size: 28px;
+    }
+
+    .hero-mid span {
+        color: rgb(24, 228, 41);
+    }
+
+    .hero-mid-pic {
+        width: 90%;
+        margin-top: 2%;
+        background: linear-gradient(rgba(22, 22, 22, 0.5), rgba(22, 22, 22, 0.5));
+    }
+
+    .achieve {
+        font-size: 24px;
+        padding-top: 4%;
+    }
+
+    .achieve h1 {
+        font-size: 28px;
+    }
+
+    .achieve p {
+        font-size: 18px;
+        margin: 10px auto 20px;
+    }
+
+    .achieve .wrapper {
+        position: static;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding-top: 5%;
+        transform: none;
+    }
+
+    .achieve .wrapper .contain {
+        width: 60%;
+        height: auto;
+        padding: 1em 0;
+        font-size: 14px;
+    }
+
+    .achieve .wrapper .contain i {
+        font-size: 3em;
+    }
+
+    .achieve .wrapper .contain span.num {
+        font-size: 2.5em;
+    }
+
+    .achieve .wrapper .contain span.text {
+        font-size: 1.5em;
+    }
+
+    .achieve .contain i, .achieve .contain .num, .achieve .contain .text {
+        padding: 8px 0;
+    }
+
+    .volunteer {
+        flex-direction: column;
+        align-items: center;
+        font-size: 24px;
+        padding: 20px 5%;
+        padding-top: 10%;
+    }
+
+    .volText {
+        padding-top: 10px;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .volText h1 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .volunteer .volText span {
+        color: rgb(24, 228, 41);
+    }
+
+    .volText p {
+        font-size: 18px;
+        text-align: justify;
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+
+    .volImg {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .join-us-pic {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .volunteer .volText button {
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+
+    .download {
+        flex-direction: column;
+        align-items: center;
+        margin: 10px 5%;
+        justify-content: center;
+        background: linear-gradient(rgba(255, 255, 255, 0.247), rgba(255, 255, 255, 0.247));
+        height: auto;
+        border-radius: 2em;
+        color: #121316;
+        padding: 20px 0;
+    }
+
+    .download .scanImg img {
+        width: 80%;
+        padding: 0;
+    }
+
+    .download .scanText {
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    .download .scanText h1 {
+        font-size: 24px;
+        margin: 10px 0;
+    }
+
+    .download .scanText ol {
+        list-style: disc;
+        margin-top: 10px;
+        font-weight: 400;
+        padding: 0 20px;
+    }
+
+    .download .scanText ol li {
+        font-size: 18px;
+        line-height: 1.5;
+        text-align: left;
+    }
+
+    .download .scanText button {
+        margin-top: 10px;
+        font-size: 18px;
+        font-weight: 500;
+        padding: 10px 20px;
+    }
+
+    .download .scanText button:hover {
+        transform: scale(1.1);
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        min-height: 150vh;
+        background-size: cover;
+        background-position: center;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+    .hero-text {
+        display: block;
+        padding: 50px 20px 20px 20px;
+        padding-top: 30%;
+    }
+
+    .text-head h1 {
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 1.2;
+    }
+
+    .text-head {
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .text-head2 {
+        text-align: center;
+        line-height: 1.2;
+        padding: 10px 0;
+    }
+
+    .text-head2 h1 {
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    .text-head2 h1 span {
+        color: rgb(24, 228, 41);
+    }
+
+    .text-head2 {
+        padding: 0;
+    }
+
+    .hero p {
+        font-size: 18px; 
+        padding-left: 5%;  
+        padding-right: 5%;
+    }
+
+    .hero-mid {
+        font-size: 24px;
+        padding: 20px 5%;
+    }
+
+    .hero-mid h1 {
+        font-size: 28px;
+    }
+
+    .hero-mid span {
+        color: rgb(24, 228, 41);
+    }
+
+    .hero-mid-pic {
+        width: 90%;
+        margin-top: 10px;
+        background: linear-gradient(rgba(22, 22, 22, 0.5), rgba(22, 22, 22, 0.5));
+    }
+
+    .achieve {
+        font-size: 24px;
+        padding: 20px 5%;
+    }
+
+    .achieve h1 {
+        font-size: 28px;
+    }
+
+    .achieve p {
+        font-size: 18px;
+        margin: 10px auto 20px;
+    }
+
+    .achieve .wrapper {
+        position: static;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding-top: 5%;
+        transform: none;
+    }
+
+    .achieve .contain {
+        width: 80%;
+        height: auto;
+        padding: 2em 0;
+        font-size: 14px;
+    }
+
+    .achieve .contain i, .achieve .contain .num, .achieve .contain .text {
+        font-size: 3em;
+        padding: 8px 0;
+    }
+
+    .achieve .wrapper .contain span.num {
+        font-size: 2.5em;
+    }
+
+    .achieve .wrapper .contain span.text {
+        font-size: 1.5em;
+    }
+
+    .volunteer {
+        flex-direction: column;
+        font-size: 24px;
+        padding: 10px 5%;
+        padding-top: 10%;
+    }
+
+    .volText {
+        padding-top: 10px;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .volText h1 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .volunteer .volText span {
+        color: rgb(24, 228, 41);
+    }
+
+    .volText p {
+        font-size: 18px;
+        text-align: justify;
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+
+    .volImg {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .join-us-pic {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .volunteer .volText button {
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+
+    .download {
+        flex-direction: column;
+        align-items: center;
+        margin: 10px 5%;
+        justify-content: center;
+        background: linear-gradient(rgba(255, 255, 255, 0.247), rgba(255, 255, 255, 0.247));
+        height: auto;
+        border-radius: 2em;
+        color: #121316;
+        padding: 20px 0;
+    }
+
+    .download .scanImg img {
+        width: 80%;
+        padding: 0;
+    }
+
+    .download .scanText {
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    .download .scanText h1 {
+        font-size: 24px;
+        margin: 10px 0;
+    }
+
+    .download .scanText ol {
+        list-style: disc;
+        margin-top: 10px;
+        font-weight: 400;
+        padding: 0 20px;
+    }
+
     .download .scanText ol li {
         font-size: 16px;
+        line-height: 1.5;
+        text-align: left;
     }
+
     .download .scanText button {
-        font-size: 14px;
+        margin-top: 10px;
+        font-size: 18px;
+        font-weight: 500;
     }
 }
