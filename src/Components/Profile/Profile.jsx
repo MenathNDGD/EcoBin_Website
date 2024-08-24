@@ -156,6 +156,12 @@ const Profile = () => {
                   onChange={handleProfilePicChange} 
                   ref={fileInputRef} 
                 />
+                {uploading && (
+                  <div className="uploading-spinner">
+                    <div className="spinner"></div>
+                    <div className="loading-text">Uploading...</div>
+                  </div>
+                )}
               </div>
               <div className="profileInfo">
                 <p>
