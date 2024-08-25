@@ -100,7 +100,7 @@ const Home = () => {
           <img src={QRImg} alt="Scan Me!" />
         </div>
         <div className="scanText">
-          <h1>Download Our Android Application</h1>
+          <h1>Download Our Mobile Application</h1>
           <ol>
             <li>Scan QR Code Or Click Download To Get App</li>
             <li>Register & Create Your Account OR Login with Existing Account</li>
