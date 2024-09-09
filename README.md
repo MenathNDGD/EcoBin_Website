@@ -132,7 +132,6 @@ EcoBin_Website/
 ```
 
 ---
-
 # 🌍 EcoBin | 💻 Web Application | 🚀 Run The Project
 
 ---
