@@ -1,15 +1,15 @@
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
-import { getStorage } from 'firebase/storage';
+import { getStorage } from "firebase/storage";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCHgx5sJ6Y3gMQi3WdvSJZE9Qeb77ZdofU",
-  authDomain: "ecobin-login-auth.firebaseapp.com",
-  projectId: "ecobin-login-auth",
-  storageBucket: "ecobin-login-auth.appspot.com",
-  messagingSenderId: "267555158405",
-  appId: "1:267555158405:web:3a13ab797a9e4bbb45acec"
+  apiKey: process.env.REACT_APP_API_KEY,
+  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_STORAGE_BUCKET_ID,
+  messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_APP_ID,
 };
 
 const app = initializeApp(firebaseConfig);
