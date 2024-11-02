@@ -1,71 +1,56 @@
-import React from 'react';
-import './Footer.css';
+import React from "react";
 
 const Footer = () => {
   return (
-    <div>
-        <footer className="footer">
-            <div className="row">
-                <div className="colLeft">
-                    <h1>Contact Us</h1>
-                    <div className="contact-item">
-                    <i class="fa-solid fa-street-view"></i>
-                        <ol>
-                            <li>
-                                <a 
-                                    href="https://www.google.com/maps?q=No. 128, Colombo 07, Sri Lanka" 
-                                    target="_blank" 
-                                    rel="noopener noreferrer">No. 128, Colombo 07,
-                                    <li>
-                                        Sri Lanka.
-                                    </li>
-                                </a>
-                            </li>
-                        </ol>
-                    </div>
-                    <div className="contact-item">
-                        <i className="fa-solid fa-envelope"></i>
-                        <ol>
-                            <li><a href='mailto:ecobinmana@gmail.com'>ecobinmana@gmail.com</a></li>
-                            <li><a href='mailto:info@ecobinadmin.net'>info@ecobinadmin.net</a></li>
-                        </ol>
-                    </div>
-                    <div className="contact-item">
-                        <i className="fa-solid fa-phone-volume"></i>
-                        <ol>
-                            <li><a href="tel:0750104549">0750104549</a></li>
-                            <li><a href="tel:0701234859">0701234859</a></li>
-                        </ol>
-                    </div>
-                </div>
+    <div
+      className="bg-cover bg-center bg-no-repeat"
+      style={{ backgroundImage: "url('../../assets/footerImg.png')" }}
+    >
+      <footer className="bg-black/90 text-white py-10 mt-10">
+        <div className="container mx-auto px-4 flex flex-wrap justify-between">
+          {/* Contact Us Section */}
+          <div className="flex-1 min-w-[200px] mb-8 md:mb-0">
+            <h1 className="text-center text-2xl border-b-2 border-white pb-2 mb-4">
+              Contact Us
+            </h1>
+            <ul className="space-y-2 text-lg">
+              <li>ecobinmana@gmail.com | info@ecobinadmin.net</li>
+              <li>0750104549 | 0701234859</li>
+              <li>No. 128, Colombo 07, Sri Lanka.</li>
+            </ul>
+          </div>
 
-                <div className="colMid">
-                    <h1>Services</h1>
-                    <ol>
-                        <li>Automated Sorting Service</li>
-                        <li>Real-time Bin Level Monitoring Service</li>
-                        <li>Fast Notification Service</li>
-                        <li>Bin Location Tracking Service</li>
-                        <li>Reporting and Analytics Service</li>
-                    </ol>
-                </div>
+          {/* Services Section */}
+          <div className="flex-1 min-w-[200px] mb-8 md:mb-0">
+            <h1 className="text-center text-2xl border-b-2 border-white pb-2 mb-4">
+              Services
+            </h1>
+            <ul className="space-y-2 text-lg">
+              <li>Automated Sorting Service</li>
+              <li>Real-time Bin Level Monitoring Service</li>
+              <li>Fast Notification Service</li>
+            </ul>
+          </div>
 
-                <div className="colRight">
-                    <h1>Follow Us</h1>
-                    <i className="fa-brands fa-facebook"></i>
-                    <i className="fa-brands fa-whatsapp"></i>
-                    <i className="fa-brands fa-linkedin"></i>
-                    <i className="fa-brands fa-square-twitter"></i>
-                    <p>Let's Rock And Roll Together!</p>
-                </div>
+          {/* Follow Us Section */}
+          <div className="flex-1 min-w-[200px] text-center">
+            <h1 className="text-2xl border-b-2 border-white pb-2 mb-4">
+              Follow Us
+            </h1>
+            <div className="flex justify-center space-x-4 mb-4">
+              <i className="fa-brands fa-facebook text-white text-4xl hover:text-green-500 transition-transform transform hover:scale-125"></i>
+              <i className="fa-brands fa-whatsapp text-white text-4xl hover:text-green-500 transition-transform transform hover:scale-125"></i>
+              <i className="fa-brands fa-linkedin text-white text-4xl hover:text-green-500 transition-transform transform hover:scale-125"></i>
+              <i className="fa-brands fa-square-twitter text-white text-4xl hover:text-green-500 transition-transform transform hover:scale-125"></i>
             </div>
-
-            <div className="footer-legal">
-                <p>T & C | Copyright © 2024 EcoBin Smart Garbage Management Platform | Privacy & Policy</p>
-            </div>             
-        </footer>
+            <div className="justify-center text-center">
+              T & C | © 2024 EcoBin | Privacy & Policy
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   );
-}
+};
 
 export default Footer;
