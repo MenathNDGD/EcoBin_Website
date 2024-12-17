@@ -1,324 +1,331 @@
-.bgReg{
-    width: 100%;
-    min-height: auto;
-    background: linear-gradient(rgba(22, 22, 22, 0.5), rgba(22, 22, 22, 0.5)), url('../../assets/home_bg.png') no-repeat;
-    background-size: cover;
-    background-position: center;
-    color: #fff;
+.bgReg {
+  width: 100%;
+  min-height: auto;
+  background: linear-gradient(rgba(22, 22, 22, 0.5), rgba(22, 22, 22, 0.5)),
+    url("../../assets/home_bg.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
 }
 
-.regContent{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-left: 55px;
-    padding-top: 8%;
-    padding-bottom: 3%;
+.regContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 55px;
+  padding-top: 8%;
+  padding-bottom: 3%;
 }
 
-.regContent .regImg img{
-    width: 90%;
-    margin-left: 10%;
+.regContent .regImg img {
+  width: 90%;
+  margin-left: 10%;
 }
 
-.regForm{
-    width: 500px;
-    color: #fff;
-    border-radius: 30px;
-    background: transparent;
-    border: 3px solid rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(30px);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    padding: 30px 40px;
-    margin-right: 10%;
-    text-align: center;
+.regForm {
+  width: 500px;
+  color: #fff;
+  border-radius: 30px;
+  background: transparent;
+  border: 3px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(30px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding: 30px 40px;
+  margin-right: 10%;
+  text-align: center;
 }
 
-.regForm h1{
-    font-size: 40px;
-    text-align: center;
-    text-transform: uppercase;
+.regForm h1 {
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
-.regForm .inputBox{
-    position: relative;
-    width: 100%;
-    height: 50px;
-    margin: 30px 0;
+.regForm .inputBox {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
 }
 
-.regForm .agree{
-    font-size: 15px;
+.regForm .agree {
+  font-size: 15px;
 }
 
-.agree label input{
-    accent-color: #fff;
-    margin-right: 8px;
+.agree label input {
+  accent-color: #fff;
+  margin-right: 8px;
 }
 
-.agree label{
-    font-size: 18px;
+.agree label {
+  font-size: 18px;
 }
 
-.regForm button{
-    width: 40%;
-    height: 50px;
-    background: #fff;
-    border: none;
-    outline: none;
-    border-radius: 40px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    font-size: 22px;
-    color: #121316;
-    font-weight: 700;
-    margin-top: 5%;
+.regForm button {
+  width: 40%;
+  height: 50px;
+  background: #fff;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 22px;
+  color: #121316;
+  font-weight: 700;
+  margin-top: 5%;
 }
 
-.regForm button:hover{
-    background-color: rgb(24, 228, 41);
+.regForm button:hover {
+  background-color: rgb(24, 228, 41);
 }
 
-.regForm .loginLink p{
-    font-size: 18px;
-    text-align: center;
-    margin: 20px 0 15px;
+.regForm .loginLink p {
+  font-size: 18px;
+  text-align: center;
+  margin: 20px 0 15px;
 }
 
-.loginLink p a:hover{
-    font-weight: 700;
-    color: rgb(24, 228, 41);
+.loginLink p a:hover {
+  font-weight: 700;
+  color: rgb(24, 228, 41);
+}
+
+.error {
+  color: red;
+  font-size: 1rem;
+  margin-top: -5%;
+  margin-bottom: 5%;
 }
 
 @media (max-width: 1200px) {
-    .regContent {
-        flex-direction: column;
-        padding-left: 20px;
-        padding-right: 20px;
-        padding-top: 5%;
-        padding-bottom: 5%;
-    }
-    
-    .regContent .regImg img {
-        width: 100%;
-        margin-left: 0;
-        margin-bottom: 20px;
-    }
-    
-    .regForm {
-        width: 100%;
-        padding: 20px;
-        margin: 0 auto;
-    }
-    
-    .regForm h1 {
-        font-size: 30px;
-    }
-    
-    .regForm .inputBox {
-        margin: 20px 0;
-    }
-    
-    .regForm .agree {
-        font-size: 14px;
-    }
-    
-    .agree label {
-        font-size: 16px;
-    }
-    
-    .regForm button {
-        width: 80%;
-        margin-top: 10%;
-    }
-    
-    .regForm .loginLink p {
-        font-size: 16px;
-    }
+  .regContent {
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+  .regContent .regImg img {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+
+  .regForm {
+    width: 100%;
+    padding: 20px;
+    margin: 0 auto;
+  }
+
+  .regForm h1 {
+    font-size: 30px;
+  }
+
+  .regForm .inputBox {
+    margin: 20px 0;
+  }
+
+  .regForm .agree {
+    font-size: 14px;
+  }
+
+  .agree label {
+    font-size: 16px;
+  }
+
+  .regForm button {
+    width: 80%;
+    margin-top: 10%;
+  }
+
+  .regForm .loginLink p {
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 992px) {
-    .regContent {
-        flex-direction: column;
-        padding-left: 5%;
-        margin-top: 15%;
-        padding-bottom: 5%;
-    }
-    
-    .regContent .regImg img {
-        width: 80%;
-        margin: 0 auto 20px auto;
-    }
-    
-    .regForm {
-        width: 80%;
-        padding: 20px;
-        margin: 0 auto;
-    }
-    
-    .regForm h1 {
-        font-size: 35px;
-    }
-    
-    .regForm .inputBox {
-        margin: 20px 0;
-    }
-    
-    .regForm .agree {
-        font-size: 14px;
-    }
-    
-    .agree label {
-        font-size: 16px;
-    }
-    
-    .regForm button {
-        width: 100%;
-        margin-top: 10%;
-    }
-    
-    .regForm .loginLink p {
-        font-size: 16px;
-    }
+  .regContent {
+    flex-direction: column;
+    padding-left: 5%;
+    margin-top: 15%;
+    padding-bottom: 5%;
+  }
+
+  .regContent .regImg img {
+    width: 80%;
+    margin: 0 auto 20px auto;
+  }
+
+  .regForm {
+    width: 80%;
+    padding: 20px;
+    margin: 0 auto;
+  }
+
+  .regForm h1 {
+    font-size: 35px;
+  }
+
+  .regForm .inputBox {
+    margin: 20px 0;
+  }
+
+  .regForm .agree {
+    font-size: 14px;
+  }
+
+  .agree label {
+    font-size: 16px;
+  }
+
+  .regForm button {
+    width: 100%;
+    margin-top: 10%;
+  }
+
+  .regForm .loginLink p {
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 768px) {
-    .regContent {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding-left: 0;
-        padding-top: 5%;
-        padding-bottom: 5%;
-    }
-    
-    .regContent .regImg img {
-        width: 100%;
-        margin: 0 auto 20px auto;
-    }
-    
-    .regForm {
-        width: 90%;
-        padding: 20px;
-        margin: 0 auto;
-    }
-    
-    .regForm h1 {
-        font-size: 30px;
-    }
-    
-    .regForm .inputBox {
-        margin: 20px 0;
-    }
-    
-    .regForm .agree {
-        font-size: 14px;
-    }
-    
-    .agree label {
-        font-size: 16px;
-    }
-    
-    .regForm button {
-        width: 100%;
-        margin-top: 10%;
-    }
-    
-    .regForm .loginLink p {
-        font-size: 16px;
-    }
+  .regContent {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+  .regContent .regImg img {
+    width: 100%;
+    margin: 0 auto 20px auto;
+  }
+
+  .regForm {
+    width: 90%;
+    padding: 20px;
+    margin: 0 auto;
+  }
+
+  .regForm h1 {
+    font-size: 30px;
+  }
+
+  .regForm .inputBox {
+    margin: 20px 0;
+  }
+
+  .regForm .agree {
+    font-size: 14px;
+  }
+
+  .agree label {
+    font-size: 16px;
+  }
+
+  .regForm button {
+    width: 100%;
+    margin-top: 10%;
+  }
+
+  .regForm .loginLink p {
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 576px) {
-    .regContent {
-        flex-direction: column;
-        padding-left: 0;
-        padding-top: 15%;
-        padding-bottom: 5%;
-        margin-bottom: 5%;
-    }
-    
-    .regContent .regImg img {
-        display: none;
-    }
-    
-    .regForm {
-        width: 90%;
-        padding: 20px;
-        margin: 0 auto;
-    }
-    
-    .regForm h1 {
-        font-size: 30px;
-    }
-    
-    .regForm .inputBox {
-        margin: 20px 0;
-    }
-    
-    .regForm button {
-        width: 100%;
-        margin-top: 10%;
-    }
-    
-    .regForm .loginLink p {
-        font-size: 16px;
-    }
-    
-    .agree {
-        font-size: 14px;
-    }
-    
-    .agree label {
-        font-size: 16px;
-    }
+  .regContent {
+    flex-direction: column;
+    padding-left: 0;
+    padding-top: 15%;
+    padding-bottom: 5%;
+    margin-bottom: 5%;
+  }
+
+  .regContent .regImg img {
+    display: none;
+  }
+
+  .regForm {
+    width: 90%;
+    padding: 20px;
+    margin: 0 auto;
+  }
+
+  .regForm h1 {
+    font-size: 30px;
+  }
+
+  .regForm .inputBox {
+    margin: 20px 0;
+  }
+
+  .regForm button {
+    width: 100%;
+    margin-top: 10%;
+  }
+
+  .regForm .loginLink p {
+    font-size: 16px;
+  }
+
+  .agree {
+    font-size: 14px;
+  }
+
+  .agree label {
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 480px) {
-    .regContent {
-      flex-direction: column;
-      padding: 5% 20px;
-      align-items: center;
-      justify-content: center;
-    }
-  
-    .regContent .regImg img {
-      display: none;
-    }
-  
-    .regForm {
-      width: 100%;
-      padding: 20px;
-      margin: 0 auto;
-    }
-  
-    .regForm h1 {
-      font-size: 30px;
-    }
-  
-    .regForm .inputBox {
-      margin: 20px 0;
-    }
-  
-    .regForm button {
-      width: 100%;
-      margin-top: 10%;
-    }
-  
-    .regForm .loginLink p {
-      font-size: 16px;
-    }
-  
-    .agree {
-      font-size: 14px;
-    }
-  
-    .agree label {
-      font-size: 16px;
-    }
-  
-    .agree label a {
-      font-size: 16px;
-    }
+  .regContent {
+    flex-direction: column;
+    padding: 5% 20px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .regContent .regImg img {
+    display: none;
+  }
+
+  .regForm {
+    width: 100%;
+    padding: 20px;
+    margin: 0 auto;
+  }
+
+  .regForm h1 {
+    font-size: 30px;
+  }
+
+  .regForm .inputBox {
+    margin: 20px 0;
+  }
+
+  .regForm button {
+    width: 100%;
+    margin-top: 10%;
+  }
+
+  .regForm .loginLink p {
+    font-size: 16px;
+  }
+
+  .agree {
+    font-size: 14px;
+  }
+
+  .agree label {
+    font-size: 16px;
+  }
+
+  .agree label a {
+    font-size: 16px;
+  }
 }
-  
